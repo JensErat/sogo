@@ -1,0 +1,3428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="CreationTime" content="2008-10-24T09:42:32Z">
+  <meta name="ModificationTime" content="2014-06-16T10:19:42Z">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 11.3px 0.0px; font: 10.0px Optima}
+    p.p2 {margin: 0.0px 0.0px 11.3px 0.0px; font: 11.0px Times; min-height: 13.0px}
+    p.p3 {margin: 0.0px 0.0px 11.3px 85.0px; font: 11.0px Times; min-height: 13.0px}
+    p.p4 {margin: 12.0px 0.0px 6.0px 85.0px; text-align: right; font: 22.0px Times}
+    p.p5 {margin: 12.0px 0.0px 6.0px 85.0px; text-align: right; font: 14.0px Times}
+    p.p6 {margin: 0.0px 0.0px 11.3px 85.0px; font: 10.0px Optima}
+    p.p7 {margin: 0.0px 0.0px 11.3px 85.0px; font: 10.0px Optima; min-height: 12.0px}
+    p.p8 {margin: 0.0px 0.0px 11.3px 85.0px; text-align: right; font: 10.0px Optima; min-height: 12.0px}
+    p.p9 {margin: 11.9px 0.0px 11.9px 85.0px; font: 12.0px Palatino; color: #000000}
+    p.p10 {margin: 11.3px 0.0px 5.7px 0.0px; font: 11.0px Times}
+    p.p11 {margin: 0.0px 0.0px 5.7px 85.0px; font: 11.0px Optima}
+    p.p12 {margin: 0.0px 0.0px 6.0px 85.0px; text-indent: -28.4px; font: 10.0px Optima}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Optima; min-height: 12.0px}
+    p.p14 {margin: 11.9px 0.0px 22.9px 85.0px; font: 18.0px Palatino}
+    p.p15 {margin: 0.0px 0.0px 11.3px 85.0px; text-align: center; font: 10.0px Optima; min-height: 12.0px}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Optima}
+    p.p17 {margin: 0.0px 0.0px 0.0px 85.0px; font: 9.0px Monaco}
+    p.p18 {margin: 0.0px 0.0px 0.0px 85.0px; font: 9.0px Monaco; min-height: 12.0px}
+    p.p19 {margin: 0.0px 0.0px 11.3px 85.0px; font: 9.0px Times}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Optima; color: #ffffff}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Optima; color: #ffffff; min-height: 12.0px}
+    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Times}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Times}
+    p.p25 {margin: 0.0px 0.0px 0.0px 85.0px; font: 11.0px Times; min-height: 13.0px}
+    p.p26 {margin: 0.0px 0.0px 0.0px 65.8px; font: 10.0px Optima}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.0px Optima}
+    p.p28 {margin: 0.0px 0.0px 0.0px 10.5px; font: 10.0px Optima}
+    p.p29 {margin: 0.0px 0.0px 0.0px 10.5px; font: 10.0px Optima; min-height: 12.0px}
+    p.p30 {margin: 0.0px 0.0px 0.0px 35.5px; font: 10.0px Times}
+    p.p31 {margin: 0.0px 0.0px 0.0px 10.5px; font: 10.0px Times}
+    p.p32 {margin: 0.0px 0.0px 0.0px 10.5px; font: 9.0px Times}
+    p.p33 {margin: 0.0px 0.0px 0.0px 10.5px; font: 9.0px Times; color: #000000}
+    p.p34 {margin: 0.0px 0.0px 0.0px 10.3px; font: 9.0px Monaco}
+    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Optima}
+    p.p36 {margin: 0.0px 0.0px 6.0px 85.0px; font: 10.0px Optima}
+    p.p37 {margin: 0.0px 0.0px 6.0px 85.0px; font: 9.0px Times}
+    p.p38 {margin: 0.0px 0.0px 6.0px 85.0px; font: 10.0px Optima; min-height: 12.0px}
+    p.p39 {margin: 0.0px 0.0px 11.3px 85.0px; font: 10.0px Times}
+    p.p40 {margin: 0.0px 28.4px 14.2px 113.4px; font: 10.0px Optima}
+    p.p41 {margin: 0.0px 0.0px 6.0px 85.0px; font: 10.0px Times}
+    p.p42 {margin: 0.0px 0.0px 11.3px 0.0px; font: 10.0px Times}
+    p.p43 {margin: 0.0px 0.0px 11.3px 85.0px; font: 10.0px Times; min-height: 13.0px}
+    p.p44 {margin: 0.0px 0.3px 0.0px 11.8px; font: 10.0px Optima}
+    p.p46 {margin: 0.0px 0.0px 0.0px 85.0px; font: 9.0px Times}
+    p.p47 {margin: 0.0px 0.0px 0.0px 85.0px; font: 10.0px Times; min-height: 13.0px}
+    p.p48 {margin: 0.0px 0.0px 0.0px 85.0px; font: 10.0px Times}
+    p.p49 {margin: 0.0px 0.0px 0.0px 85.0px; font: 9.0px Times; min-height: 11.0px}
+    p.p50 {margin: 0.0px 0.0px 0.0px 66.7px; font: 10.0px Optima}
+    p.p51 {margin: 0.0px 0.0px 11.3px 85.0px; font: 11.0px Times; background-color: #fffb00; min-height: 13.0px}
+    p.p52 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.5px Optima}
+    p.p53 {margin: 0.0px 0.0px 6.0px 85.0px; text-indent: -28.4px; font: 10.0px Optima; min-height: 12.0px}
+    li.li16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Optima}
+    li.li23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco}
+    li.li45 {margin: 0.0px 0.3px 0.0px 0.0px; font: 10.0px Optima}
+    span.s1 {font: 9.0px Monaco}
+    span.s2 {font: 9.0px Times}
+    span.s3 {font: 10.0px Times}
+    span.s4 {font: 10.0px Courier}
+    span.s5 {font: 10.0px Optima}
+    span.s6 {letter-spacing: 0.0px}
+    span.Apple-tab-span {white-space:pre}
+    table.t1 {border-collapse: collapse}
+    td.td1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #cbcbcb #cbcbcb #cbcbcb #cbcbcb; padding: 0.0px 5.0px 0.0px 5.0px}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: square}
+  </style>
+</head>
+<body>
+<p class="p1">­</p>
+<p class="p2"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><br></p>
+<p class="p3"><b></b><br></p>
+<p class="p4">version 2.2.5</p>
+<p class="p5"><i>Installation and Configuration Guide</i></p>
+<p class="p3"><br></p>
+<p class="p6">Copyright ©<span class="Apple-converted-space">  </span>2008-2014 Inverse inc. (<a href="http://inverse.ca/">http://inverse.ca</a>)</p>
+<p class="p6">Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. <span class="Apple-converted-space"> </span></p>
+<p class="p6">Please refer to <a href="http://www.gnu.org/licenses/fdl-1.2.txt">http://www.gnu.org/licenses/fdl-1.2.txt</a> for the full license.</p>
+<p class="p6">Version 2.2.5 – May 2014</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p8"><br></p>
+<p class="p9">Contents</p>
+<p class="p10"><b>Chapter 1<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18865_1508206336"><b>About this Guide <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>3</b></a></p>
+<p class="p10"><b>Chapter 2<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18867_1508206336"><b>Introduction <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>4</b></a></p>
+<p class="p11"><a href="#__RefHeading__19192_1508206336">Architecture and Compatibility <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>5</a></p>
+<p class="p10"><b>Chapter 3<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18869_1508206336"><b>System Requirements <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>6</b></a></p>
+<p class="p11"><a href="#__RefHeading__19194_1508206336">Assumptions <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>6</a></p>
+<p class="p11"><a href="#__RefHeading__19196_1508206336">Minimum Hardware Requirements <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>7</a></p>
+<p class="p11"><a href="#__RefHeading__19198_1508206336">Operating System Requirements <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>8</a></p>
+<p class="p10"><b>Chapter 4<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18871_1508206336"><b>Installation <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>9</b></a></p>
+<p class="p11"><a href="#__RefHeading__19200_1508206336">Software Downloads <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>9</a></p>
+<p class="p11"><a href="#__RefHeading__19202_1508206336">Software Installation <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>9</a></p>
+<p class="p10"><b>Chapter 5<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18873_1508206336"><b>Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>10</b></a></p>
+<p class="p11"><a href="#__RefHeading__19204_1508206336">GNUstep Environment Overview <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>10</a></p>
+<p class="p11"><a href="#__RefHeading__19206_1508206336">Preferences Hierarchy <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>11</a></p>
+<p class="p11"><a href="#__RefHeading__19208_1508206336">General Preferences <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>12</a></p>
+<p class="p11"><a href="#__RefHeading__19210_1508206336">Authentication using LDAP <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>18</a></p>
+<p class="p11"><a href="#__RefHeading__19212_1508206336">LDAP Attributes Indexing <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>24</a></p>
+<p class="p11"><a href="#__RefHeading__19214_1508206336">LDAP Attributes Mapping <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>24</a></p>
+<p class="p11"><a href="#__RefHeading__19216_1508206336">Authenticating using C.A.S. <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>26</a></p>
+<p class="p11"><a href="#__RefHeading__19218_1508206336">Authenticating using SAML2 <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>27</a></p>
+<p class="p11"><a href="#__RefHeading__19220_1508206336">Database Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>28</a></p>
+<p class="p11"><a href="#__RefHeading__19222_1508206336">Authentication using SQL <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>29</a></p>
+<p class="p11"><a href="#__RefHeading__19224_1508206336">SMTP Server Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>32</a></p>
+<p class="p11"><a href="#__RefHeading__19226_1508206336">IMAP Server Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>32</a></p>
+<p class="p11"><a href="#__RefHeading__19228_1508206336">Web Interface Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>34</a></p>
+<p class="p11"><a href="#__RefHeading__19230_1508206336">SOGo Configuration Summary <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>40</a></p>
+<p class="p11"><a href="#__RefHeading__19232_1508206336">Multi-domains Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>41</a></p>
+<p class="p11"><a href="#__RefHeading__19234_1508206336">Apache Configuration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>43</a></p>
+<p class="p11"><a href="#__RefHeading__19236_1508206336">Starting Services <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>43</a></p>
+<p class="p11"><a href="#__RefHeading__19238_1508206336">Cronjob — EMail reminders <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>44</a></p>
+<p class="p11"><a href="#__RefHeading__19240_1508206336">Cronjob — Vacation messages expiration <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>44</a></p>
+<p class="p10"><b>Chapter 6<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18875_1508206336"><b>Managing User Accounts <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>45</b></a></p>
+<p class="p11"><a href="#__RefHeading__19242_1508206336">Creating the SOGo Administrative Account <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>45</a></p>
+<p class="p11"><a href="#__RefHeading__19244_1508206336">Creating a User Account <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>46</a></p>
+<p class="p10"><b>Chapter 7<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18877_1508206336"><b>Microsoft ActiveSync <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>47</b></a></p>
+<p class="p10"><b>Chapter 8<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18879_1508206336"><b>Using SOGo <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>49</b></a></p>
+<p class="p11"><a href="#__RefHeading__19246_1508206336">SOGo Web Interface <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>49</a></p>
+<p class="p11"><a href="#__RefHeading__19248_1508206336">Mozilla Thunderbird and Lightning <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>49</a></p>
+<p class="p11"><a href="#__RefHeading__19250_1508206336">Apple iCal <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>50</a></p>
+<p class="p11"><a href="#__RefHeading__19252_1508206336">Apple AddressBook <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>50</a></p>
+<p class="p11"><a href="#__RefHeading__19254_1508206336">Microsoft ActiveSync / Mobile Devices <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>52</a></p>
+<p class="p10"><b>Chapter 9<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18881_1508206336"><b>Upgrading <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>53</b></a></p>
+<p class="p10"><b>Chapter 10<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18883_1508206336"><b>Additional Information <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>55</b></a></p>
+<p class="p10"><b>Chapter 11<span class="Apple-tab-span">	</span></b><a href="#__RefHeading__18885_1508206336"><b>Commercial Support and Contact Information <span class="Apple-converted-space">  <span class="Apple-tab-span">	</span></span>56</b></a></p>
+<p class="p7"><br></p>
+<p class="p9">About this Guide</p>
+<p class="p6">This guide will walk you through the installation and configuration of the SOGo solution. It also covers the installation and configuration of SOGo ActiveSync support – the solution used to synchronize mobile devices with SOGo.</p>
+<p class="p6">The instructions are based on version 2.2.5 of SOGo.</p>
+<p class="p6">The latest version of this guide is available at <a href="http://www.sogo.nu/downloads/documentation.html">http://www.sogo.nu/downloads/documentation.html</a>.</p>
+<p class="p9">Introduction</p>
+<p class="p6">SOGo is a free and modern scalable groupware server. It offers shared calendars, address books, and emails through your favourite Web browser and by using a native client such as Mozilla Thunderbird and Lightning.</p>
+<p class="p6">SOGo is standard-compliant. It supports CalDAV, CardDAV, GroupDAV, iMIP and iTIP and reuses existing IMAP, SMTP and database servers - making the solution easy to deploy and interoperable with many applications.</p>
+<p class="p6">SOGo features :</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Scalable architecture suitable for deployments from dozens to many thousands of users</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Rich Web-based interface that shares the look and feel, the features and the data of Mozilla Thunderbird and Lightning</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Improved integration with Mozilla Thunderbird and Lightning by using the SOGo Connector and the SOGo Integrator</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Native compatibility for Microsoft Outlook 2003, 2007, 2010, and 2013</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Two-way synchronization support with any Microsoft ActiveSync-capable device, or Outlook 2013</p>
+<p class="p13"><br></p>
+<p class="p6">SOGo is developed by a community of developers located mainly in North America and Europe. More information can be found at <a href="http://www.sogo.nu/">http://www.sogo.nu</a></p>
+<p class="p14">Architecture and Compatibility</p>
+<p class="p15"><br></p>
+<p class="p6">Standard protocols such as CalDAV, CardDAV, GroupDAV, HTTP, IMAP and SMTP are used to communicate with the SOGo platform or its sub-components. Mobile devices supporting the Microsoft ActiveSync protocol are also supported.</p>
+<p class="p6">To install and configure the native Microsoft Outlook compatibility layer, please refer to the <i>SOGo Native Microsoft Outlook Configuration Guide</i>.</p>
+<p class="p9">System Requirements</p>
+<p class="p14">Assumptions</p>
+<p class="p6">SOGo reuses many components in an infrastructure. Thus, it requires the following<span class="Apple-converted-space">  </span>:</p>
+<ul class="ul1">
+  <li class="li16">❏<span class="Apple-tab-span">	</span>Database server (MySQL, PostgreSQL or Oracle)</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>LDAP server (OpenLDAP, Novell eDirectory, Microsoft Active Directory and others)<span class="Apple-converted-space"> </span></li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>SMTP server (Postfix, Sendmail and others)</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>IMAP server (Courier, Cyrus IMAP Server, Dovecot and others)</li>
+</ul>
+<p class="p7"><br></p>
+<p class="p6">In this guide, we assume that all those components are running on the same server (i.e., “<span class="s1">localhost</span>” or “<span class="s1">127.0.0.1</span>”) that SOGo will be installed on.</p>
+<p class="p6">Good understanding of those underlying components and GNU/Linux is required to install SOGo. If you miss some of those required components, please refer to the appropriate documentation and proceed with the installation and configuration of these requirements before continuing with this guide.</p>
+<p class="p6">The following table provides recommendations for the required components, together with version numbers :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Database server</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">PostgreSQL 7.4 or later</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">LDAP server</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">OpenLDAP 2.3.x or later</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">SMTP server</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Postfix 2.x</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">IMAP server</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Cyrus IMAP Server 2.3.x or later</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p6">More recent versions of the software mentioned above can also be used.</p>
+<p class="p14">Minimum Hardware Requirements</p>
+<p class="p6">The following table provides hardware recommendations for the server, desktops and mobile devices :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Server</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Evaluation and testing</p>
+        <ul class="ul1">
+          <li class="li16"> Intel, AMD, or PowerPC CPU 1 GHz</li>
+        </ul>
+        <ul class="ul1">
+          <li class="li16"> 512 MB of RAM</li>
+          <li class="li16"> 1 GB of disk space</li>
+        </ul>
+        <p class="p13"><br></p>
+        <p class="p16">Production</p>
+        <ul class="ul1">
+          <li class="li16"> Intel, AMD or PowerPC CPU 3 GHz</li>
+        </ul>
+        <ul class="ul1">
+          <li class="li16"> 2048 MB of RAM</li>
+        </ul>
+        <ul class="ul1">
+          <li class="li16"> 10 GB of disk space (excluding the mail store)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Desktop</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">General</p>
+        <ul class="ul1">
+          <li class="li16"> Intel, AMD, or PowerPC CPU 1.5 GHz</li>
+        </ul>
+        <ul class="ul1">
+          <li class="li16"> 1024x768 monitor resolution</li>
+        </ul>
+        <ul class="ul1">
+          <li class="li16"> 512 MB of RAM</li>
+          <li class="li16"> 128 Kbps or higher network connection</li>
+        </ul>
+        <p class="p13"><br></p>
+        <p class="p16">Microsoft Windows</p>
+        <ul class="ul1">
+          <li class="li16"> Microsoft Windows XP SP2 or Vista</li>
+        </ul>
+        <p class="p13"><br></p>
+        <p class="p16">Apple Mac OS X</p>
+        <ul class="ul1">
+          <li class="li16"> Apple Mac OS X 10.2 or later</li>
+        </ul>
+        <p class="p13"><br></p>
+        <p class="p16">Linux</p>
+        <ul class="ul1">
+          <li class="li16"> Your favourite GNU/Linux distribution</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Mobile Device</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Any mobile device which supports CalDAV, CardDAV or Microsoft ActiveSync.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p14">Operating System Requirements</p>
+<p class="p6">The following 32-bit and 64-bit operating systems are currently supported by SOGo :</p>
+<ul class="ul1">
+  <li class="li16">❏<span class="Apple-tab-span">	</span>Red Hat Enterprise Linux (RHEL) Server 5 and 6</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>Community ENTerprise Operating System (CentOS) 5 and 6</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>Debian GNU/Linux 5.0 (Lenny) to 7.0 (Wheezy)</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>Ubuntu 10.04 (Lucid) to 14.04 (Trusty)</li>
+  <li class="li16"></li>
+</ul>
+<p class="p6">Make sure the required components are started automatically at boot time and that they are running before proceeding with the SOGo configuration. Also make sure that you can install additional packages from your standard distribution. For example, if you are using Red Hat Enterprise Linux 5, you have to be subscribed to the Red Hat Network before continuing with the SOGo software installation.</p>
+<p class="p6">This document covers the installation of SOGo under RHEL 6.</p>
+<p class="p6">For installation instructions on Debian and Ubuntu, please refer directly to the SOGo website at <a href="http://www.sogo.nu/">http://www.sogo.nu</a>. Under the downloads section, you will find links for installation steps for Debian and Ubuntu.</p>
+<p class="p6">Note that once the SOGo packages are installed under Debian and Ubuntu, this guide can be followed in order to fully configure SOGo.</p>
+<p class="p9">Installation</p>
+<p class="p6">This section will guide you through the installation of SOGo together with its dependencies. The steps described here apply to an RPM-based installation for a Red Hat or CentOS distribution.</p>
+<p class="p14">Software Downloads</p>
+<p class="p6">SOGo can be installed using the <span class="s1">yum</span> utility. To do so, first create the <span class="s1">/etc/yum.repos.d/inverse.repo</span> configuration file with the following content :<span class="Apple-converted-space"> </span></p>
+<p class="p17">[SOGo]</p>
+<p class="p17">name=Inverse SOGo Repository</p>
+<p class="p17">baseurl=http://inverse.ca/downloads/SOGo/RHEL6/$basearch</p>
+<p class="p17">gpgcheck=0<br>
+</p>
+<p class="p6">Some of the softwares on which SOGo depends are available from the repository of RepoForge (previously known as RPMforge). To add RepoForge to your packages sources, download and install the appropriate RPM package from <a href="http://packages.sw.be/rpmforge-release/">http://packages.sw.be/rpmforge-release/</a>. Also make sure you enabled the “rpmforge-extras” repository.</p>
+<p class="p6">For more information on using RepoForge, visit <a href="http://repoforge.org/use/">http://repoforge.org/use/</a>.</p>
+<p class="p14">Software Installation</p>
+<p class="p6">Once the yum configuration file has been created, you are now ready to install SOGo and its dependencies. To do so, proceed with the following command :</p>
+<p class="p17">yum install sogo</p>
+<p class="p18"><br></p>
+<p class="p6">This will install SOGo and its dependencies such as GNUstep, the SOPE packages and memcached. Once the base packages are installed, you need to install the proper database connector suitable for your environment. You need to install <span class="s2">sope49-gdl1-postgresql</span> for the PostgreSQL database system, <span class="s2">sope49-gdl1-mysql</span> for MySQL or <span class="s2">sope49-gdl1-oracle</span> for Oracle. The installation command will thus look like this :</p>
+<p class="p19">yum install sope49-gdl1-postgresql</p>
+<p class="p6">Once completed, SOGo will be fully installed on your server. You are now ready to configure it.</p>
+<p class="p9">Configuration</p>
+<p class="p6">In this section, you'll learn how to configure SOGo to use your existing LDAP, SMTP and database servers. As previously mentioned, we assume that those components run on the same server on which SOGo is being installed. If this is not the case, please adjust the configuration parameters to reflect those changes.</p>
+<p class="p14">GNUstep Environment Overview</p>
+<p class="p6">SOGo makes use of the GNUstep environment. GNUstep is a free software implementation of the OpenStep specification which provides many facilities for building all types of server and desktop applications. Among those facilities, there is a configuration API similar to the "Registry" paradigm in Microsoft Windows. In OpenSTEP, GNUstep and MacOS X, these are called the "user defaults".</p>
+<p class="p6">In SOGo, the user's applications settings are stored in <span class="s1">/etc/sogo/sogo.conf</span>.<span class="s3"><span class="Apple-converted-space"> </span></span> You can use your favourite text editor to modify the file.</p>
+<p class="p6">The <span class="s1">sogo.conf</span> file is a serialized <i>property list</i>. This simple format encapsulates four basic data types: arrays, dictionaries (or hashes), strings and numbers. Numbers are represented as-is, except for booleans which can take the unquoted values “YES” and “NO”. Strings are not mandatorily quoted, but doing so will avoid you many problems. A dictionary is a sequence of key and value pairs separated in their middle with a “=” sign. It starts with a “{“ and ends with a corresponding “}”. Each value definition in a dictionary ends with a semicolon. An array is a chain of values starting with “(“ and ending with “)”, where the values are separated with a “,”. Also, the file generally follows a C-style indentation for clarity but this indentation is not required, only recommended. Block comments are delimited by /* and */ and can span multiple lines while line comments must start with //.</p>
+<p class="p14">Preferences Hierarchy</p>
+<p class="p6">SOGo supports domain names segregation, meaning that you can separate multiple groups of users within one installation of SOGo. A user associated to a domain is limited to access only the users data from the same domain. Consequently, the configuration parameters of SOGo are defined on three levels:</p>
+<p class="p7"><br></p>
+<p class="p6">Each level inherits the preferences of the parent level. Therefore, domain preferences define the defaults values of the user preferences, and the system preferences define the default values of all domains preferences. Both system and domains preferences are defined in the <span class="s1">/etc/sogo/sogo.conf</span>, while the users preferences are configurable by the user and stored in SOGo's database.</p>
+<p class="p6">To identify the level in which each parameter can be defined, we use the following abbreviations in the tables of this document :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter exclusive to the system and not configurable per domain</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter exclusive to a domain and not configurable per user</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter configurable by the user</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p6">Remember that the hierarchy paradigm allow the default value of a parameter to be defined at a parent level.</p>
+<p class="p7"><br></p>
+<p class="p14">General Preferences</p>
+<p class="p6">The following table describes the general parameters that can be set :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOWorkersCount</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The amount of instances of SOGo that will be spawned to handle multiple requests simultaneously. When started from the init script, that amount is overriden by the “PREFORK” value in <span class="s1">/etc/sysconfig/sogo</span> or <span class="s1">/etc/default/sogo</span>. A value of 3 is a reasonable default for low usage. The maximum value depends on the CPU and IO power provided by your machine : a value set too high will actually decrease performances under high load.<br>
+Defaults to 1 when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOListenQueueSize</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">This parameter controls the backlog size of the socket listen queue. For large-scale deployments, this value must be adjusted in case all workers are busy and the parent processes receives lots of incoming connections. Defaults to 5 when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOPort</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The TCP listening address and port used by the SOGo daemon.<span class="Apple-converted-space">  </span>The format is <span class="s2">ipaddress:port</span><br>
+Defaults to 127.0.0.1:<span class="s4">20000</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOLogFile</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The file path where to log messages. Specify <span class="s1">-</span> to log to the console.<br>
+Defaults to <span class="s1">/var/log/sogo/sogo.log</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOPidFile</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The file path where the parent process id will be written.<br>
+Defaults to <span class="s1">/var/run/sogo/sogo.pid</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOWatchDogRequestTimeout</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">This parameter specifies the number of minutes after which a busy child process will be killed by the parent process.</p>
+        <p class="p16">Defaults to <span class="s2">10</span> (minutes).</p>
+        <p class="p16">Do not set this too low as child processes replying to clients on a slow internet connection could be killed prematurely.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SxVMemLimit</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the maximum amount of memory (in megabytes) that a child can use. Reaching that value will force children processes to restart, in order to preserve system memory.<br>
+Defaults to <span class="s1">384</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMemcachedHost</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the hostname and optionally the port of the memcached server.</p>
+        <p class="p16">A path can also be used if the server must be reached via a Unix socket.<br>
+Defaults to <span class="s1">localhost</span>.</p>
+        <p class="p16">See <span class="s1">memcached_servers_parse(3)</span> for details on the syntax.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCacheCleanupInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the expiration (in seconds) of each object in the cache.<br>
+Defaults to <span class="s1">300</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoAuthenticationType</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the way by which users will be authenticated. For C.A.S., specify “cas”. For SAML2, specify “saml2”. For anything else, leave that value empty.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoTrustProxyAuthentication</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set whether HTTP username should be trusted.</p>
+        <p class="p16">Defaults to <span class="s3">NO</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoEncryptionKey</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define a key to encrypt the passwords of remote Web calendars when <i>SOGoTrustProxyAuthentication</i> is enabled.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCASServiceURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">When using C.A.S. authentication, this specifies the base url for reaching the C.A.S. service. This will be used by SOGo to deduce the proper login page as well as the other C.A.S. services that SOGo will use.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCASLogoutEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Boolean value indicating whether the “Logout” link is enabled when using C.A.S. as authentication mechanism.</p>
+        <p class="p16">The “Logout”link will end up calling <span class="s2">SOGoCASServiceURL/logout</span> to terminate the client's single sign-on C.A.S. session.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoAddressBookDAVAccessEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter controlling WebDAV access to the <i>Contacts</i> collections.</p>
+        <p class="p16">This can be used to deny access to these resources from Lightning for example.</p>
+        <p class="p16">Defaults to <span class="s1">YES</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarDAVAccessEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter controlling WebDAV access to the <i>Calendar</i> collections.</p>
+        <p class="p16">This can be used to deny access to these resources from Lightning for example.</p>
+        <p class="p16">Defaults to <span class="s3">YES</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2PrivateKeyLocation</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The location of the SSL private key file on the filesystem that is used by SOGo to sign and encrypt communications with the SAML2 identity provider. This file must be generated for each running SOGo service (rather than host).</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2CertiticateLocation</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The location of the SSL certificate file. This file must be generated for each running SOGo service.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2IdpMetadataLocation</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The location of the metadata file that describes the services available on the SAML2 identify provider.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2IdpPublicKeyLocation</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The location of the SSL public key file on the filesystem that is used by SOGo to sign and encrypt communications with the SAML2 identity provider. This file should be part of the setup of your identity provider.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2IdpCertificateLocation</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The location of the SSL certificate file. This file should be part of the setup of your identity provider.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSAML2LogoutEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Boolean value indicated whether the “Logout” link is enabled when using SAML2 as authentication mechanism.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoTimeZone</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set a default time zone for users. The default timezone is set to UTC. The Olson database is a standard database that takes all the time zones around the world into account and represents them along with their history. On GNU/Linux systems, time zone definition files are available under /usr/share/zoneinfo. Listing the available files will give you the name of the available time zones. This could be America/New_York, Europe/Berlin, Asia/Tokyo or Africa/Lubumbashi.</p>
+        <p class="p16">In our example, we set the time zone to America/Montreal</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailDomain</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the default domain name used by SOGo. SOGo uses this parameter to build the list of valid email addresses for users.</p>
+        <p class="p16">In our example, we set the default domain to <span class="s1">acme.com</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoAppointmentSendEMailNotifications</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set whether SOGo sends or not email notifications to meeting participants. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES – to send notifications</li>
+          <li class="li16">• NO – to not send notifications</li>
+          <li class="li16">Defaults to <span class="s3">NO</span> when unset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFoldersSendEMailNotifications</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Same as above, but the notifications are triggered on the creation of a calendar or an address book.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoACLsSendEMailNotifications</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Same as above, but the notifications are sent to the involved users of a calendar or address book's ACLs.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarDefaultRoles</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the default roles when giving permissions to a user to access a calendar. Defaults roles are ignored for public accesses. Must be an array of up to five strings. Each string defining a role for an event category must begin with one of those values:</p>
+        <ul class="ul2">
+          <li class="li16">• Public</li>
+          <li class="li16">• Confidential</li>
+          <li class="li16">• Private</li>
+          <li class="li16">And each string must end with one of those values:</li>
+          <li class="li16">• Viewer</li>
+          <li class="li16">• DAndTViewer</li>
+          <li class="li16">• Modifier</li>
+          <li class="li16">• Responder</li>
+          <li class="li16">The array can also contain one or many of the following strings:</li>
+          <li class="li16">• ObjectCreator</li>
+          <li class="li16">• ObjectEraser</li>
+        </ul>
+        <p class="p22"><span class="s5">Example: </span>SOGoCalendarDefaultRoles = ("ObjectCreator", "PublicViewer");</p>
+        <p class="p16">Defaults to no role when unset. Recommended values are <span class="s2">"PublicViewer" </span><span class="s3">and</span><span class="s2"> “ConfidentialDAndTViewer”.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoContactsDefaultRoles</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the default roles when giving permissions to a user to access an address book. Defaults roles are ignored for public accesses. Must be an array of one or many of the following strings:</p>
+        <ul class="ul2">
+          <li class="li16">• ObjectViewer</li>
+          <li class="li16">• ObjectEditor</li>
+          <li class="li16">• ObjectCreator</li>
+          <li class="li16">• ObjectEraser</li>
+        </ul>
+        <p class="p22"><span class="s5">Example: </span>SOGoContactsDefaultRoles = ("ObjectEditor");</p>
+        <p class="p16">Defaults to no role when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSuperUsernames</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set which usernames require administrative privileges over all the users tables. For example, this could be used to post events in the users calendar without requiring the user to configure his/her ACLs. In this case you will need to specify those superuser's usernames like this :</p>
+        <p class="p23">SOGoSuperUsernames = (&lt;username1&gt;[, &lt;username2&gt;, ...]);</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLanguage</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the default language used in the Web interface for SOGo. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• BrazilianPortuguese</li>
+          <li class="li16">• Czech</li>
+          <li class="li16">• Dutch</li>
+          <li class="li16">• English</li>
+          <li class="li16">• French</li>
+          <li class="li16">• German</li>
+          <li class="li16">• Hungarian</li>
+        </ul>
+        <ul class="ul2">
+          <li class="li16">• Italian</li>
+          <li class="li16">• Russian</li>
+          <li class="li16">• Spanish</li>
+          <li class="li16">• Swedish</li>
+          <li class="li16">• Welsh</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoNotifyOnPersonalModifications</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set whether SOGo sends or not email receipts when someone changes his/her own calendar. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES – to send notifications</li>
+          <li class="li16">• NO – to not send notifications</li>
+        </ul>
+        <p class="p16">Defaults to NO when unset. User can overwrite this from the calendar properties window.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoNotifyOnExternalModifications</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set whether SOGo sends or not email receipts when a modification is being done to his/her own calendar by someone else. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES – to send notifications</li>
+          <li class="li16">• NO – to not send notifications</li>
+        </ul>
+        <p class="p16">Defaults to NO when unset. User can overwrite this from the calendar properties window.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLDAPContactInfoAttribute</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify an LDAP attribute that should be displayed when auto-completing user searches.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoiPhoneForceAllDayTransparency</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24">When set to YES, this will force all-day events sent over by iPhone OS based devices to be transparent. This means that the all-day events will not be considered during freebusy lookups. Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoEnablePublicAccess</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24">Parameter used to allow or not your users to share publicly (ie., requiring not authentication) their calendars and address books.</p>
+        <p class="p24">Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES – to allow them</li>
+          <li class="li16">• NO – to prevent them from doing so</li>
+        </ul>
+        <p class="p24">Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoPasswordChangeEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24">Parameter used to allow or not users to change their passwords from SOGo.</p>
+        <p class="p24">Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES – to allow them</li>
+          <li class="li16">• NO – to prevent them from doing so</li>
+        </ul>
+        <p class="p24">Defaults to NO when unset.</p>
+        <p class="p24">For this feature to work properly when authenticating against AD or Samba4, the LDAP connection <b>must</b> use SSL/TLS. Server side restrictions can also cause the password change to fail, in which case SOGo will only log a '<i>Constraint violation (0x13)</i>' error. These restrictions include<span class="Apple-converted-space">  </span>Password too young, complexity constraints not satisfied, user cannot change password, etc...<span class="Apple-converted-space">  </span>Also note that Samba has a minimum password age of 1 day by default.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSupportedLanguages</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24">Parameter used to configure which languages are available from SOGo's Web interface. Available languages are specified as an array of string. The default value is :</p>
+        <p class="p22"><span class="Apple-converted-space"> </span>( "Czech", "Welsh", "English", "Spanish", "French", "German", "Italian", "Hungarian", "Dutch", "BrazilianPortuguese", "Polish", "Russian", Ukrainian", "Swedish" )</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoHideSystemEMail</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p24">Parameter used to control if SOGo should hide or not the system email address (UIDFieldName<span class="s5"><i>@SOGoMailDomain</i></span>). This is currently limited to CalDAV (<i>calendar-user-address-set</i>).</p>
+        <p class="p24">Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSearchMinimumWordLength</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to control the minimum length to be used for the search string (attendee completion, address book search, etc.) prior triggering the server-side search operation.</p>
+        <p class="p16">Defaults to 2 when unset – which means a search operation will be triggered on the 3<sup>rd</sup> typed character.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumFailedLoginCount</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to control the number of failed login attempts required during <i>SOGoMaximumFailedLoginInterval</i> seconds or more. If conditions are met, the account will be blocked for <i>SOGoFailedLoginBlockInterval</i> seconds since the first failed login attempt. Default value is 0, or disabled.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumFailedLoginInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Number of seconds, defaults to 10.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFailedLoginBlockInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Number of seconds, defaults to 300 (or 5 minutes). Note that <i>SOGoCacheCleanupInterval</i> must be set to a value equal or higher than <i>SOGoFailedLoginBlockInterval.</i></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumMessageSubmissionCount</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to control the number of email messages a user can send from SOGo's webmail interface, to <i>SOGoMaximumRecipientCount</i>, in <i>SOGoMaximumSubmissionInterval</i> seconds or more. If conditions are met or exceeded, the user won't be able to send mails for <i>SOGoMessageSubmissionBlockInterval</i> seconds. Default value is 0, or disabled.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumRecipientCount</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Maximum number of recipients. Default value is 0, or disabled.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumSubmissionInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Number of seconds, defaults to 30.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMessageSubmissionBlockInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Number of seconds, default to 300 (or 5 minutes). Note that <i>SOGoCacheCleanupInterval</i> must be set to a value equal or higher than <i>SOGoFailedLoginBlockInterval.</i></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p14">Authentication using LDAP</p>
+<p class="p6">SOGo can use a LDAP server to authenticate users and, if desired, to provide global address books. SOGo can also use an SQL backend for this purpose (see the section <i>Authentication using SQL</i> later in this document). Insert the following text into your configuration file to configure an authentication and global address book using an LDAP directory server :</p>
+<p class="p17">SOGoUserSources = (</p>
+<p class="p17"><span class="Apple-converted-space">    </span>{</p>
+<p class="p17"><span class="Apple-converted-space">        </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>CNFieldName = cn;<br>
+<span class="Apple-converted-space">        </span>IDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>UIDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>IMAPHostFieldName = mailHost;<br>
+<span class="Apple-converted-space">        </span>baseDN = "ou=users,dc=acme,dc=com";<br>
+<span class="Apple-converted-space">        </span>bindDN = "uid=sogo,ou=users,dc=acme,dc=com";<br>
+<span class="Apple-converted-space">        </span>bindPassword = qwerty;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>displayName = "Shared Addresses";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>hostname = "<a href="ldap://127.0.0.1:389">ldap://127.0.0.1:389</a>";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>id = public;<br>
+<span class="Apple-converted-space">        </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>}</p>
+<p class="p17">);</p>
+<p class="p25"><br></p>
+<p class="p6">In our example, we use a LDAP server running on the same host where SOGo is being installed.</p>
+<p class="p6">You can also, using the filter attribute, restrict the results to match various criteria. For example, you could define, in your <span class="s2">.GNUstepDefaults</span> file, the following filter to return only entries belonging to the organization <i>Inverse </i>with a <i>mail</i> address and not <i>inactive</i>:</p>
+<p class="p17"><span class="Apple-converted-space">    </span>filter = "(o='Inverse' AND mail='*' AND status &lt;&gt; 'inactive')";</p>
+<p class="p18"><br></p>
+<p class="p6">Since LDAP sources can serve as user repositories for authentication as well as address books, you can specify the following for each source to make them appear in the address book module:</p>
+<p class="p17"><span class="Apple-converted-space">   </span>displayName = "&lt;human identification name of the address book&gt;";</p>
+<p class="p17"><span class="Apple-converted-space">   </span>isAddressBook = YES;</p>
+<p class="p25"><br></p>
+<p class="p6">For certain LDAP sources, SOGo also supports indirect binds for user authentication. Here is an example :</p>
+<p class="p17">SOGoUserSources = (</p>
+<p class="p17"><span class="Apple-converted-space">    </span>{</p>
+<p class="p17"><span class="Apple-converted-space">        </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>CNFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>IDFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>UIDFieldName = sAMAccountName;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>baseDN = "cn=Users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>bindDN = "cn=sogo,cn=Users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>bindFields = (sAMAccountName);</p>
+<p class="p17"><span class="Apple-converted-space">        </span>bindPassword = qwerty;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>displayName = "Active Directory";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>hostname = ldap://10.0.0.1:389;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>id = directory;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>}</p>
+<p class="p17">);</p>
+<p class="p25"><br></p>
+<p class="p6">In this example, SOGo will use an indirect bind by first determining the user DN. That value is found by doing a search on the fields specified in <span class="s1">bindFields</span>. Most of the time, there will be only one field but it is possible to specify more in the form of an array (for example, <span class="s1">bindFields = (sAMAccountName, cn) </span>). When using multiple fields, only one of the fields needs to match the login name. In the above example, when a user logs in, the login will be checked against the <span class="s1">sAMAccountName</span><span class="s4"> </span>entry in all the user cards, and once this card is found, the user DN of this card will be used for checking the user's password.</p>
+<p class="p6">Finally, SOGo supports LDAP-based groups. Groups must be defined like any other authentication sources (ie., <span class="s2">canAuthenticate</span> must be set to <span class="s2">YES</span> and a group must have a valid email address). In order for SOGo to determine if a specific LDAP entry is a group, SOGo will look for one of the following objectClass attributes :</p>
+<p class="p26">❏<span class="Apple-tab-span">	</span>group</p>
+<p class="p26">❏<span class="Apple-tab-span">	</span>groupOfNames</p>
+<p class="p26">❏<span class="Apple-tab-span">	</span>groupOfUniqueNames</p>
+<p class="p26">❏<span class="Apple-tab-span">	</span>posixGroup</p>
+<p class="p6">You can set ACLs based on group membership and invite a group to a meeting (and the group will be decomposed to its list of members upon save by SOGo). You can also control the visibility of the group from the list of shared address books or during mail autocompletion by setting the <span class="s2">isAddressBook</span> parameter to <span class="s2">YES</span> or <span class="s2">NO</span>. The following LDAP entry shows how a typical group is defined :</p>
+<p class="p17">dn: cn=inverse,ou=groups,dc=inverse,dc=ca</p>
+<p class="p17">objectClass: groupOfUniqueNames</p>
+<p class="p17">objectClass: top</p>
+<p class="p17">objectClass: extensibleObject</p>
+<p class="p17">uniqueMember: uid=alice,ou=users,dc=inverse,dc=ca</p>
+<p class="p17">uniqueMember: uid=bernard,ou=users,dc=inverse,dc=ca</p>
+<p class="p17">uniqueMember: uid=bob,ou=users,dc=inverse,dc=ca</p>
+<p class="p17">cn: inverse</p>
+<p class="p17">structuralObjectClass: groupOfUniqueNames</p>
+<p class="p17">mail: inverse@inverse.ca</p>
+<p class="p7"><br></p>
+<p class="p6">The corresponding SOGoUserSources entry to handle groups like this one would be :</p>
+<p class="p17"><span class="Apple-converted-space">    </span>{</p>
+<p class="p17"><span class="Apple-converted-space">        </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>CNFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>IDFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>UIDFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>baseDN = "ou=groups,dc=inverse,dc=ca”;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>bindDN = "cn=sogo,ou=services,dc=inverse,dc=ca";</p>
+<p class="p17"><span class="Apple-converted-space">        </span>bindPassword = zot;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>displayName = “Inverse Groups”;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>hostname = ldap://127.0.0.1:389;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>id = inverse_groups;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>}</p>
+<p class="p7"><br></p>
+<p class="p6">The following table describes the possible parameters related to a LDAP source :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoUserSources</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the LDAP and/or SQL sources used for authentication and global address books. Multiple sources can be specified as an array of dictionaries. A dictionary that defines an LDAP source can contain the following values:</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">type</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the type of this user source, set to <span class="s1">ldap</span> for an LDAP source</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">id</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the identification name of the LDAP repository. This must be unique – even when using multiple domains.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">CNFieldName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the complete name</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">IDFieldName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that starts a user DN if bindFields is not used. This field must be unique across the entire SOGo domain</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">UIDFieldName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the login name of a user. <br>
+The returned value <b>must be unique across the whole SOGo installation</b> since it is used to identify the user in the <span class="s2">folder_info</span> database table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MailFieldNames</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">an array of fields that returns the user's email addresses (defaults to <span class="s1">mail</span> when unset)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SearchFieldNames</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">an array of fields to to match against the search string when filtering users (defaults to <span class="s1">sn</span>, <span class="s1">displayName</span>, and <span class="s1">telephoneNumber</span> when unset)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">IMAPHostFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns either an URI to the IMAP server as described for SOGoIMAPServer, or a simple server hostname that would be used as a replacement for the hostname part in the URI provided by the SOGoIMAPServer parameter</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">IMAPLoginFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the IMAP login name for the user (defaults to the value of UIDFieldName when unset)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SieveHostFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns either an URI to the SIEVE server as described for SOGoSieveServer, or a simple server hostname that would be used as a replacement for the hostname part in the URI provided by the SOGoSieveServer parameter</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">baseDN</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the base DN of your user entries</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">KindFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set, SOGo will try to determine if the value of the field corresponds to either “group”, “location” or “thing”. If that's the case, SOGo will consider the returned entry to be a resource.</p>
+        <p class="p29"><br></p>
+        <p class="p28">For LDAP-based sources, SOGo can also automatically determine if it's a resource if the entry has the <span class="s1">calendarresource</span> objectClass set.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MultipleBookingsFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">The value of this attribute is the maximum number of concurrent events to which a resource can be part of at any point in time.</p>
+        <p class="p29"><br></p>
+        <p class="p28">If this is set to 0, or if the attribute is missing, it means no limit.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">filter (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">The filter to use for LDAP queries, it should be defined as an EOQualifier. The following operators are supported:</p>
+        <p class="p30"><span class="s2">&lt;&gt; </span><i>inequality operator</i></p>
+        <p class="p30"><span class="s2">=<span class="Apple-converted-space">  </span></span><i>equality operator</i></p>
+        <p class="p31">Multiple qualifiers can be joined by using OR and AND, they can also be grouped together by using parenthesis. Attribute values should be quoted to avoid unexpected behaviour.</p>
+        <p class="p32"><span class="s3">For example:<br>
+</span>filter = “(objectClass='mailUser' OR objectClass='mailGroup') AND accountStatus='active' AND uid &lt;&gt; 'alice'”;</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">scope (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">either BASE, ONE or SUB</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">bindDN</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the DN of the login name to use for binding to your server</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">bindPassword</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">its password</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">bindAsCurrentUser</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set to YES, SOGo will always keep binding to the LDAP server using the DN of the currently authenticated user. If bindFields is set, bindDN and bindPassword will still be required to find the proper DN of the user.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">bindFields (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">an array of fields to use when doing indirect binds</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">hostname</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">a space-delimited list of LDAP URLs or LDAP hostnames.<br>
+LDAP URLs are specified in RFC 4516 and have the following general format:</p>
+        <p class="p33"><span class="s6">scheme://host:port/DN?attributes?scope?filter?extensions</span></p>
+        <p class="p28">Note that SOGo doesn't currently support <span class="s2">DN</span>, <span class="s2">attributes</span>, <span class="s2">scope</span> and <span class="s2">filter</span> in such URLs.<span class="Apple-converted-space">  </span>Using them may have undefined side effects.<br>
+URLs examples:<br>
+<span class="s2">ldap://127.0.0.1:3389 ldaps://127.0.0.1 ldap://127.0.0.1/????!StartTLS</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">port(deprecated)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">port number of the LDAP server.</p>
+        <p class="p28">A non-default port should be part of the ldap URL in the hostname parameter.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">encryption (deprecated)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">either SSL or STARTTLS</p>
+        <p class="p28">SSL should be specified as 'ldaps://' in the LDAP URL.<span class="Apple-converted-space">  </span>STARTTLS should be specified as a LDAP Extension in the LDAP URL (ex: <span class="s2">ldap://127.0.0.1/????!StartTLS</span>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">userPasswordAlgorithm</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31">The algorithm used for password encryption when changing passwords without Password Policies enabled. <br>
+Possible values are: none, plain, crypt, md5, md5-crypt, smd5, cram-md5 and sha, sha256, sha512 and <br>
+its ssha (e.g. ssha or ssha256) variants (plus setting of the encoding with ".b64" or ".hex"). <br>
+For a more detailed description see <a href="http://wiki.dovecot.org/Authentication/PasswordSchemes">http://wiki.dovecot.org/Authentication/PasswordSchemes</a>. <br>
+Note that cram-md5 is not actually using cram-md5 (due to the lack of challenge-response mechanism), its <br>
+just saving the intermediate MD5 context as Dovecot stores in its database.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">canAuthenticate</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">If set to YES, this LDAP source is used for authentication</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">passwordPolicy</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">If set to YES, SOGo will use the extended LDAP Password Policies attributes. If you LDAP server does not support those and you activate this feature, every LDAP requests will fail.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">isAddressBook</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set to YES, this LDAP source is used as a shared address book (with read-only access). Note that if set to NO, autocompletion will not work for entries in this source and thus, freebusy lookups.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">displayName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set as an address book, the human identification name of the LDAP repository</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">ModulesConstraints (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">limits the access of any module through a constraint based on an LDAP attribute; must be a dictionary with keys <span class="s1">Mail</span>, and/or <span class="s1">Calendar</span>, for example:</p>
+        <p class="p34">ModulesConstraints = {</p>
+        <p class="p34"><span class="Apple-tab-span">	</span>Calendar = {</p>
+        <p class="p34"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ou = employees;</p>
+        <p class="p34"><span class="Apple-tab-span">	</span>};</p>
+        <p class="p34">};</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">mapping</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">A dictionary that maps contact attributes used by SOGo to the LDAP attributes used by the schema of the LDAP source.<span class="Apple-converted-space">  </span>Each entry must have an attribute name as key and an array of strings as value. This enables actual fields to be mapped one after another when fetching contact informations.</p>
+        <p class="p29"><br></p>
+        <p class="p28">See the LDAP Attribute Mapping section below for an example and a list of supported attributes.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">objectClasses</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">when the “modifiers” list (see below) is set, or when using LDAP-based user addressbooks (see “abOU” bellow), this list of object classes will be applied to new records as they are created</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">modifiers</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">a list (array) of usernames that are authorized to perform modifications to the address book defined by this LDAP source</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">abOU</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">this field enables LDAP-based user addressbooks by specifying the value of the address book container beneath each user entry, for example: <span class="s1">ou=addressbooks,uid=username,dc=domain</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p6">The following parameters can be defined along the other keys of each entry of the SOGoUserSources, but can also defined at the domain and/or system levels :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p35">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLDAPContactInfoAttribute</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify an attribute that should appear in autocompletion of the web interface.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLDAPQueryLimit</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to limit the number of returned results from the LDAP server whenever SOGo performs a LDAP query (for example, during addresses completion in a shared address book).</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLDAPQueryTimeout</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter to define the timeout of LDAP queries. The actual time limit for operations is also bounded by the maximum time that the server is configured to allow.<br>
+Defaults to 0 (unlimited).</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p14">LDAP Attributes Indexing</p>
+<p class="p6">To ensure proper performance of the SOGo application, the following LDAP attributes must be fully indexed :</p>
+<ul class="ul1">
+  <li class="li16">❏<span class="Apple-tab-span">	</span>givenName</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>cn</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>mail</li>
+  <li class="li16">❏<span class="Apple-tab-span">	</span>sn</li>
+  <li class="li16"></li>
+</ul>
+<p class="p6">Please refer to the documentation of the software you use in order to index those attributes.</p>
+<p class="p14">LDAP Attributes Mapping</p>
+<p class="p36">Some LDAP attributes are mapped to contacts attributes in the SOGo UI. The table below list most of them. It is possible to override these by using the <i>mapping</i> configuration parameter.<span class="Apple-converted-space"> </span></p>
+<p class="p36">For example, if the LDAP schema uses the <i>fax</i> attribute to store the fax number, one could map it to the <i>facsimiletelephonenumber</i> attribute like this:</p>
+<p class="p37">mapping = {</p>
+<p class="p37"><span class="Apple-converted-space">   </span>facsimiletelephonenumber = ("fax", "facsimiletelephonenumber");</p>
+<p class="p37">};</p>
+<p class="p13"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Name</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">First</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">givenName</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Last</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">sn</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">DisplayName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">displayName <i>or</i> cn <i>or</i> givenName + sn</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Nickname</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillanickname</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Internet</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Email</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mail</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Secondary email</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillasecondemail</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">ScreenName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">nsaimid</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Phones</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Work</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">telephoneNumber</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Home</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">homephone</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Mobile</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mobile</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Fax</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">facsimiletelephonenumber</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Pager</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">pager</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Home</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Address</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomestreet + mozillahomestreet2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">City</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomelocalityname</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">State/Province</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomestate</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Zip/Postal Code</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomepostalcode</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Country</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomecountryname</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Web page</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillahomeurl</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Work</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Title</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">title</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Department</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">ou</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Organization</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">o</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Address</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">street +<span class="Apple-converted-space">  </span>mozillaworkstreet2</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">City</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">l</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">State/Province</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">st</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Zip/Postal code</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">postalCode</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Country</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">c</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Web page</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">mozillaworkurl</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Other</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Birthday</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">birthyear-birthmonth-birthday</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Note</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">description</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p38"><br></p>
+<p class="p14">Authenticating using C.A.S.</p>
+<p class="p6">SOGo natively supports C.A.S. authentication. For activating C.A.S. authentication you need first to make sure that the <span class="s1">SOGoAuthenticationType</span> setting is set to “cas” and that the <span class="s1">SOGoCASServiceURL</span> setting is configured appropriately.</p>
+<p class="p6">The tricky part shows up when using SOGo as a frontend interface to an IMAP server as this imposes constraints needed by the C.A.S. protocol to ensure secure communication between the different services. Failing to take those precautions will prevent users from accessing their mails, while still granting basic authentication to SOGo itself.</p>
+<p class="p6">The first constraint is that <b>the amount of workers that SOGo uses must be higher than 1 in order to enable the C.A.S.</b> service to perform some validation requests during IMAP authentication. A single worker alone would not, by definition, be able to respond to the C.A.S. requests while treating the user request that required the triggering of those requests. You must therefore configure the <span class="s1">WOWorkersCount</span> setting appropriately.</p>
+<p class="p6">The second constraint is that <b>the</b> <b>SOGo service must be accessible and accessed via https</b>. Moreover, the certificate used by the SOGo server has to be recognized and trusted by the C.A.S. service. In the case of a certificate issued by a third-party authority, there should be nothing to worry about. In the case of a self-signed certificate, the certificate must be registered in the trusted keystore of the C.A.S. application. The procedure to achieve this can be summarized as importing the certificate in the proper “keystore” using the <span class="s1">keytool</span> utility and specifying the path for that keystore to the Tomcat instance which provides the C.A.S. service. This is done by tweaking the <span class="s1">javax.net.ssl.trustStore</span> setting, either in the catalina.properties file or in the command-line parameters. On debian, the SOGo certificate can also be added to the truststore as follows:</p>
+<p class="p19">openssl x509 -in /etc/ssl/certs/sogo-cert.pem -outform DER \<br>
+<span class="Apple-converted-space">  </span>-out /tmp/sogo-cert.der<br>
+keytool -import -keystore /etc/ssl/certs/java/cacerts<span class="Apple-converted-space">  </span>\<br>
+<span class="Apple-converted-space">  </span>-file /tmp/sogo-cert.der -alias sogo-cert<br>
+# The keystore password is 'changeit'<br>
+# tomcat must be restarted after this operation</p>
+<p class="p39"><span class="s5"><b>The certificate used by the CAS server must also be trusted by SOGo</b>. In case of a self-signed certificate, this means exporting tomcat's certificate using the </span><span class="s1">keytool</span> utility, converting it to PEM format and appending it to the ca-certificates.crt file. (The name and location of that file differs between distributions). Basically:</p>
+<p class="p19"># export tomcat's cert to openssl format<br>
+keytool -keystore /etc/tomcat7/keystore<span class="Apple-converted-space">  </span>-exportcert -alias tomcat | \<br>
+<span class="Apple-converted-space"> </span>openssl x509 -inform der &gt;tomcat.pem<br>
+<br>
+Enter keystore password:<span class="Apple-converted-space">  </span>tomcat<br>
+<br>
+# add the pem to the trusted certs<br>
+cp tomcat.pem /etc/ssl/certs<br>
+cat tomcat.pem<span class="Apple-converted-space">  </span>&gt;&gt;/etc/ssl/certs/ca-certificates</p>
+<p class="p6">If any of those constraints is not satisfied, the webmail interface of SOGo will display an empty email account. Unfortunately, SOGo has no possibility to detect which one is the cause of the problem. The only indicators are log messages that at least pinpoint the symptoms:</p>
+<p class="p40"><i>“failure to obtain a PGT from the C.A.S. service”</i></p>
+<p class="p6">Such an error will show up during authentication of the user to SOGo. It happens when the authentication service has accepted the user authentication ticket but has not returned a “Proxy Granting Ticket”.</p>
+<p class="p40"><i>“a CAS failure occurred during operation....”</i></p>
+<p class="p6">This error indicate that an attempt was made to retrieve an authentication ticket for a third-party service such as IMAP or sieve. Most of the time, this happens as a consequence to the problem described above. To troubleshoot these issues, one should be tailing cas.log, pam logs and sogo logs.</p>
+<p class="p6">Currently, SOGo will ask for a CAS ticket using the same CAS service name for both IMAP and Sieve. <b>When CASifying sieve, this means that the </b><span class="s2"><b>-s </b></span><b>parameter of </b><span class="s2"><b>pam_cas</b></span><b> should be the same for both IMAP and Sieve</b>, otherwise the CAS server will complain:</p>
+<p class="p37">ERROR [org.jasig.cas.CentralAuthenticationServiceImpl] - ServiceTicket [ST-31740-hoV1brhhwMNfnBkSMVUw-ocas] with service [imap://myimapserver does not match supplied service [sieve://mysieveserver:2000]</p>
+<p class="p41">Finally, when using imapproxy to speed up the imap accesses, the SOGoIMAPCASServiceName should be set to the actual imap service name expected by pam_cas, otherwise it will fail to authenticate incoming connection properly.</p>
+<p class="p14">Authenticating using SAML2</p>
+<p class="p6">SOGo natively supports SAML2 authentication. Please refer to the documentation of your identity provider and the SAML2 configuration keys that are listed above for proper setup. Once a SOGo instance is configured properly, the metadata for that instance can be retrieved from <span class="s1">http://&lt;hostname&gt;/SOGo/saml2-metadata</span> for registration with the identity provider.</p>
+<p class="p6">In order to relay authentication information to your IMAP server and if you make use of the CrudeSAML SASL plugin, you need to make sure that “NGImap4AuthMechanism” is configured to use the <i>SAML</i> mechanism. If you make use of the CrudeSAML PAM plugin, this value may be left empty.</p>
+<p class="p14">Database Configuration</p>
+<p class="p6">SOGo requires a relational database system in order to store appointments, tasks and contacts information. It also uses the database system to store personal preferences of SOGo users. In this guide, we assume you use PostgreSQL so commands provided the create the database are related to this application. However, other database servers are supported, such as MySQL and Oracle.</p>
+<p class="p39">First, make sure that your PostgreSQL server has TCP/IP connections support enabled.</p>
+<p class="p6">Create the database user and schema using the following commands :</p>
+<p class="p17">su – postgres</p>
+<p class="p17">createuser --no-superuser --no-createdb –-no-createrole \<br>
+<span class="Apple-tab-span">	</span>–-encrypted --pwprompt sogo</p>
+<p class="p17">(specify “sogo” as password)</p>
+<p class="p17">createdb -O sogo sogo</p>
+<p class="p25"><br></p>
+<p class="p6">You should then adjust the access rights to the database. To do so, modify the configuration file <span class="s1">/var/lib/pgsql/data/pg_hba.conf</span> in order to add the following line at the very beginning of the file:</p>
+<p class="p17">host <span class="Apple-converted-space">    </span>sogo<span class="Apple-converted-space">    </span>sogo<span class="Apple-converted-space">      </span>127.0.0.1/32 <span class="Apple-converted-space">      </span>md5</p>
+<p class="p18"><br></p>
+<p class="p6">Once added, restart the PostgreSQL database service. Then, modify the SOGo configuration file (<span class="s1">/etc/sogo/sogo.conf</span>) to reflect your database settings :</p>
+<p class="p17">SOGoProfileURL =<br>
+<span class="Apple-converted-space">    </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";</p>
+<p class="p17">OCSFolderInfoURL =<br>
+<span class="Apple-converted-space">    </span>"postgresql://sogo:<a href="mailto:sogo@localhost">sogo@localhost</a>:5432/sogo/sogo_folder_info";</p>
+<p class="p17">OCSSessionsFolderURL =<br>
+<span class="Apple-converted-space">    </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";</p>
+<p class="p25"><br></p>
+<p class="p6">The following table describes the parameters that were set :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoProfileURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the database URL so that SOGo can retrieve user profiles.</p>
+        <p class="p16">For MySQL, set the database URL to something like :</p>
+        <p class="p23">mysql://sogo:sogo@localhost:3306/sogo/sogo_user_profile</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">OCSFolderInfoURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the database URL so that SOGo can retrieve the location of user folders (address books and calendars)</p>
+        <p class="p16">For Oracle, set the database URL to something like :</p>
+        <p class="p23">oracle://sogo:sogo@localhost:1526/sogo/sogo_folder_info</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">OCSSessionsFolderURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the database URL so that SOGo can store and retrieve secured user sessions information. <span class="s3">For PostgreSQL, the database URL could be set to something like : </span><span class="s1">postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">OCSEMailAlarmsFolderURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">Parameter used to set the database URL for email-based alarms (that can be set on events and tasks). This parameter is relevant only if<span class="Apple-converted-space">  </span>SOGoEnableEMailAlarms is set to YES. For PostgreSQL, the database URL could be set to something like : <span class="s1">postgresql://sogo:sogo@localhost:5432/sogo/sogo_alarms_folder</span></p>
+        <p class="p16">See the “EMail reminders” section in this document for more information.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p43"><br></p>
+<p class="p19"><span class="s3">If you're using MySQL, make</span><span class="s5"> sure in your </span>my.cnf<span class="s5"> file you have :<br>
+<br>
+</span>[mysqld]<br>
+...<br>
+character_set_server=utf8<br>
+character_set_client=utf8<br>
+<br>
+[client]<br>
+default-character-set=utf8<br>
+<br>
+[mysql]<br>
+default-character-set=utf8<span class="s5"><br>
+<br>
+and when you create the SOGo database, you correctly specify the charset :<br>
+<br>
+</span>create database sogo CHARSET='UTF8';<span class="Apple-converted-space"> </span></p>
+<p class="p14">Authentication using SQL</p>
+<p class="p39">SOGo can use a SQL-based database server for authentication. The configuration is very similar to LDAP-based authentication.</p>
+<p class="p6">The following table describes all the possible parameters related to a SQL source :</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoUserSources</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the SQL and/or LDAP sources used for authentication and global address books. Multiple sources can be specified as an array of dictionaries. A dictionary that defines a SQL source can contain the following values :</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">type</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the type of this user source, set to <span class="s1">sql</span> for a SQL source</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">id</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the identification name of the SQL repository. This must be unique – even when using multiple domains.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">viewURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p44">database URL of the view used by SOGo. The view expects columns to be present. Required columns are :</p>
+        <ul class="ul2">
+          <li class="li45">• <span class="s2">c_uid</span> : will be used for authentication – it's a username or username@domain.tld</li>
+          <li class="li45">• <span class="s2">c_name</span> : will be used to uniquely identify entries – which can be identical to c_uid<span class="Apple-converted-space"> </span></li>
+          <li class="li45">• <span class="s2">c_password</span> : password of the user, plain text, crypt, md5 or sha encoded<span class="Apple-converted-space"> </span></li>
+          <li class="li45">• <span class="s2">c_cn</span> : the user's common name</li>
+          <li class="li45">• <span class="s2">mail</span> : the user's email address</li>
+          <li class="li45">Other columns can exist and will actually be mapped automatically if they have the same name as popular LDAP attributes (such as <span class="s2">givenName</span>, <span class="s2">sn</span>, <span class="s2">department</span>, <span class="s2">title</span>, <span class="s2">telephoneNumber</span>, etc.)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">userPasswordAlgorithm</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p31">The default algorithm used for password encryption when changing passwords. <br>
+Possible values are: none, plain, crypt, md5, md5-crypt, smd5, cram-md5, ldap-md5,  and sha, sha256, sha512 and <br>
+its ssha (e.g. ssha or ssha256) variants. Passwords can have the scheme prepended in the form <span class="s2">{scheme}encryptedPass</span>. <br>
+If no scheme is given, userPasswordAlgorithm is used instead. The schemes listed above follow the algorithms <br>
+described in <a href="http://wiki.dovecot.org/Authentication/PasswordSchemes">http://wiki.dovecot.org/Authentication/PasswordSchemes</a>. <br>
+Note that cram-md5 is not actually using cram-md5 (due to the lack of challenge-response mechanism), its <br>
+just saving the intermediate MD5 context as Dovecot stores in its database.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">prependPasswordScheme<span class="Apple-converted-space"> </span></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">The default behaviour is to store newly set passwords without the scheme (default: <span class="s1">prependPasswordScheme = NO</span>) . <br>
+This can be overridden by setting <span class="s1">prependPasswordScheme</span> to <span class="s1">YES</span> and will result in passwords stored as <span class="s2">{scheme}encryptedPass</span>.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">canAuthenticate</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set to <span class="s1">YES</span>, this SQL source is used for authentication</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">isAddressBook</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set to YES, this SQL source is used as a shared address book (with read-only access). Note that if set to NO, autocompletion will not work for entries in this source and thus, freebusy lookups.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">authenticationFilter (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">a filter that limits which users can authenticate from this source</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">displayName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set as an address book, the human identification name of the SQL repository</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">LoginFieldNames (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">an array of fields that specifies the column names that contain valid authentication usernames (defaults to <span class="s1">c_uid</span> when unset)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MailFieldNames (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">an array of fields that specifies the column names that<span class="Apple-converted-space">  </span>hold additional email addresses (beside the <span class="s1">mail</span> column) for each user</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">IMAPHostFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the IMAP hostname for the user</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">IMAPLoginFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the IMAP login name for the user (defaults to <span class="s1">c_uid</span> when unset)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">SieveHostFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">the field that returns the Sieve hostname for the user</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">KindFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">if set, SOGo will try to determine if the value of the field corresponds to either “group”, “location” or “thing”. If that's the case, SOGo will consider the returned entry to be a resource.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">MultipleBookingsFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">The value of this field is the maximum number of concurrent events to which a resource can be part of at any point in time.</p>
+        <p class="p29"><br></p>
+        <p class="p28">If this is set to 0, or if the attribute is missing, it means no limit.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p21"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p27">DomainFieldName (optional)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p28">If set, SOGo will use the value of that field as the domain associated to the user. See the “Multi-domains Configuration<i>”</i> section in this document for more information.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p43"><br></p>
+<p class="p6">Here is an example of an SQL-based authentication and address book source:</p>
+<p class="p17">SOGoUserSources =</p>
+<p class="p17">(</p>
+<p class="p17"><span class="Apple-converted-space">  </span>{</p>
+<p class="p17"><span class="Apple-converted-space">    </span>type = sql;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>id = directory;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>viewURL = "postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_view";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>userPasswordAlgorithm = md5;</p>
+<p class="p17"><span class="Apple-converted-space">  </span>}</p>
+<p class="p46">);</p>
+<p class="p47"><br></p>
+<p class="p48">Certain database columns must be present in the view/table, such as :</p>
+<p class="p49"><br></p>
+<p class="p50"><span class="s2">❏<span class="Apple-tab-span">	</span>c_uid</span> - will be used for authentication –<span class="Apple-converted-space">  </span>it's the username or <a href="mailto:username@domain.tld">username@domain.tld</a>)</p>
+<p class="p50"><span class="s2">❏<span class="Apple-tab-span">	</span>c_name</span> - which can be identical to c_uid –<span class="Apple-converted-space">  </span>will be used to uniquely identify entries</p>
+<p class="p50"><span class="s2">❏<span class="Apple-tab-span">	</span>c_password</span> – password of the user, plain-text, md5 or sha encoded for now</p>
+<p class="p50"><span class="s2">❏<span class="Apple-tab-span">	</span>c_cn</span> - the user's common name – such as “John Doe”</p>
+<p class="p50"><span class="s2">❏<span class="Apple-tab-span">	</span>mail</span> –<span class="Apple-converted-space">  </span>the user's mail address<span class="Apple-converted-space"> </span></p>
+<p class="p48">Note that groups are currently not supported for SQL-based authentication sources.</p>
+<p class="p14">SMTP Server Configuration</p>
+<p class="p6">SOGo makes use of a SMTP server to send emails from the Web interface, iMIP/iTIP messages and various notifications.</p>
+<p class="p6">The following table describes the related parameters.</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailingMechanism</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set how SOGo sends mail messages. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16"><span class="s1">• sendmail</span> – to use the sendmail binary</li>
+          <li class="li16"><span class="s1">• smtp</span> – to use the SMTP protocol</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSMTPServer</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The DNS name or IP address of the SMTP server used when <span class="s1">SOGoMailingMechanism</span> is set to <span class="s1">smtp</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSMTPAuthenticationType</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Activate SMTP authentication and specifies which type is in use. Current, only “PLAIN” is supported and other values will be ignored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">WOSendMail</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The path of the sendmail binary.<br>
+Defaults to <span class="s1">/usr/lib/sendmail</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoForceExternalLoginWithEmail</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify if, when logging in to the SMTP server, the primary email address of the user will be used instead of the username. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES</li>
+          <li class="li16">• NO</li>
+          <li class="li16">Defaults to <span class="s1">NO</span> when unset.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p51"><br></p>
+<p class="p14">IMAP Server Configuration</p>
+<p class="p6">SOGo requires an IMAP server in order to let users consult their email messages, manage their<span class="Apple-converted-space">  </span>folders and more.</p>
+<p class="p6">The following table describes the related parameters.</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoDraftsFolderName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the IMAP folder name used to store drafts messages.<br>
+Defaults to “Drafts” when unset.</p>
+        <p class="p16">Use a “/”<span class="Apple-converted-space">  </span>as a hierarchy separator if<span class="Apple-converted-space">  </span>referring to an IMAP subfolder.<span class="Apple-converted-space"> </span></p>
+        <p class="p16">For example : <span class="s1">INBOX/Drafts</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSentFolderName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the IMAP folder name used to store sent messages. Defaults to “Sent” when unset.</p>
+        <p class="p16">Use a “/”<span class="Apple-converted-space">  </span>as a hierarchy separator if<span class="Apple-converted-space">  </span>referring to an IMAP subfolder.<span class="Apple-converted-space"> </span></p>
+        <p class="p24">For example :<span class="s2"> </span><span class="s1">INBOX/Sent</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoTrashFolderName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the IMAP folder name used to store deleted messages. Defaults to “Trash” when unset.</p>
+        <p class="p16">Use a “/”<span class="Apple-converted-space">  </span>as a hierarchy separator if<span class="Apple-converted-space">  </span>referring to an IMAP subfolder.<span class="Apple-converted-space"> </span></p>
+        <p class="p16">For example : <span class="s1">INBOX/Trash</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoIMAPCASServiceName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the CAS service name (URL) of the imap service. This is useful if SOGo is connecting to the IMAP service through a proxy. When using <span class="s2">pam_cas</span>, this parameter should be set to the same value as the <span class="s2">-s</span> argument of the imap pam service.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoIMAPServer</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the DNS name or IP address of the IMAP server used by SOGo. You can also use SSL or TLS by providing a value using an URL, such as :</p>
+        <ul class="ul2">
+          <li class="li16">•<span class="s1"> imaps:</span>//localhost:993</li>
+          <li class="li23"><span class="s5">•</span> <span class="s5">imaps:</span>//localhost:143/?tls=YES</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSieveServer</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the DNS name or IP address of the Sieve (managesieve) server used by SOGo. You must use an URL such as:</p>
+        <ul class="ul2">
+          <li class="li16">•<span class="s1"> sie</span>ve://localhost</li>
+          <li class="li16">•<span class="s1"> </span>sieve://localhost:2000</li>
+          <li class="li23"><span class="s5">•</span> <span class="s5">sie</span>ve://localhost:2000/?tls=YES</li>
+        </ul>
+        <p class="p16">Note that TLS is supported but SSL is not.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSieveFolderEncoding</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify which encoding is used for IMAP folder names in Sieve filters. Defaults to “UTF-7”. The other possible value is “UTF-8”.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailShowSubscribedFoldersOnly</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify if the Web interface should only show subscribed IMAP folders. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES</li>
+          <li class="li16">• NO</li>
+          <li class="li16">Defaults to <span class="s1">NO</span> when unset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoIMAPAclStyle</p>
+      </td>
+      <td valign="middle" class="td1">
+        <ul class="ul1">
+          <li class="li16">Parameter used to specify which RFC the IMAP server implements with respect to ACLs. Possible values are :</li>
+        </ul>
+        <ul class="ul2">
+          <li class="li16">•<span class="s1"> </span>rfc2086</li>
+          <li class="li16">•<span class="s1"> </span>rfc<span class="s1">4314</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">rfc4314</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoIMAPAclConformsToIMAPExt</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify if the IMAP server implements the Internet Message Access Protocol Extension. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES</li>
+          <li class="li16">• NO</li>
+          <li class="li16">Defaults to <span class="s1">NO</span> when unset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoForceExternalLoginWithEmail</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify if, when logging in to the IMAP server, the primary email address of the user will be used instead of the username. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">• YES</li>
+          <li class="li16">• NO</li>
+          <li class="li16">Defaults to <span class="s1">NO</span> when unset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailSpoolPath</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the path where temporary email drafts are written. If you change this value, you must also modify the daily cronjob <span class="s1">sogo-tmpwatch</span>.<br>
+Defaults to <span class="s1">/var/spool/sogo</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">NGImap4ConnectionStringSeparator</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the IMAP mailbox separator.<span class="Apple-converted-space">  </span>Setting this will also have an impact on the mailbox separator used by Sieve filters. The default separator is “/”.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">NGImap4AuthMechanism</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Trigger the use of the IMAP “AUTHENTICATE” command with the specified SASL mechanism. Please note that feature might be limited at this time.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1">NGImap4ConnectionGroupIdPrefix</p>
+        <p class="p13"><br></p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p1">Prefix to prepend to names in IMAP ACL transactions, to indicate the name is a group name not a user name. RFC4314 gives examples where group names are prefixed with '$'. Dovecot, for one, follows this scheme, and will, for example, apply permissions for '$admins' to all users in group 'admins' in the absence of specific permissions for the individual user. The default prefix is '$'.<span class="Apple-converted-space"> </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><br></p>
+<p class="p14">Web Interface Configuration</p>
+<p class="p36">The following additional parameters only affect the Web interface behaviour of SOGo.</p>
+<p class="p38"><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoPageTitle</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the Web page title.<br>
+Defaults to <span class="s1">SOGo</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLoginModule</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify which module to show after login. Possible values are :</p>
+        <ul class="ul2">
+          <li class="li16">•<span class="s1"> Cal</span>endar</li>
+          <li class="li16">• Mail</li>
+          <li class="li16">• Con<span class="s1">tacts</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">Calendar</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFaviconRelativeURL</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify the relative URL of the site favion.<br>
+When unset, defaults to the file sogo.ico under the default web resources directory.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoZipPath</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify the path of the zip binary used to archive messages. Defaults to /usr/bin/zip when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSoftQuotaRatio</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to change the quota returned by the IMAP server by multiplying it by the specified ratio. Acts as a soft quota. Example: <span class="s1">0.8</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailUseOutlookStyleReplies<br>
+(not currently editable in Web interface)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set if email replies should use Outlook's style. Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailListViewColumnsOrder<br>
+(not currently editable in Web interface)</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify the default order of the columns from the SOGo webmail interface. The parameter is an array, for example :</p>
+        <p class="p13"><br></p>
+        <p class="p23"><span class="s5">S</span>OGoMailListViewColumnsOrder = (Flagged, Attachment, Priority, From, Subject, Unread, Date, Size);</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoVacationEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to activate the edition from the preferences window of a vacation message.</p>
+        <p class="p16">Requires Sieve script support on the IMAP host.<br>
+Defaults to NO when unset.</p>
+        <p class="p13"><br></p>
+        <p class="p16">When enabling this parameter, one must also enable the associated cronjob in /etc/cron.d/sogo in order to activate automatic vacation message expiration.</p>
+        <p class="p16">See the “<i>Cronjob</i> — Vacation messages expiration” section below for details.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoForwardEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to activate the edition from the preferences window of a forwarding email address. Requires Sieve script support on the IMAP host.<br>
+Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoSieveScriptsEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to activate the edition from the preferences windows of server-side mail filters. Requires Sieve script support on the IMAP host.<br>
+Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailPollingIntervals</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the mail polling intervals (in minutes) available to the user. The parameter is an array that can contain the following numbers:</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> 1</span></li>
+          <li class="li16">•<span class="s1"> 2</span></li>
+          <li class="li16">•<span class="s1"> 5</span></li>
+          <li class="li16">•<span class="s1"> 10</span></li>
+          <li class="li16">•<span class="s1"> 20</span></li>
+          <li class="li16">•<span class="s1"> 30</span></li>
+          <li class="li16">•<span class="s1"> 60</span></li>
+          <li class="li16">Defaults to the list above when unset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailMessageCheck</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the mail polling interval at which the IMAP server is queried for new messages. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li23"><span class="s5">•</span> manually</li>
+          <li class="li23"><span class="s5">•</span> every_minute</li>
+          <li class="li23"><span class="s5">•</span> every_2_minutes</li>
+          <li class="li23"><span class="s5">•</span> every_5_minutes</li>
+          <li class="li23"><span class="s5">•</span> every_10_minutes</li>
+          <li class="li23"><span class="s5">•</span> every_20_minutes</li>
+          <li class="li23"><span class="s5">•</span> every_30_minutes</li>
+          <li class="li23"><span class="s5">•</span> once_per_hour</li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">manually</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p52">SOGoMailAuxiliaryUserAccountsEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to activate the auxiliary IMAP accounts in SOGo. When set to YES, users can add other IMAP accounts that will be visible from the SOGo Webmail interface.</p>
+        <p class="p16">Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p52">SOGoDefaultCalendar</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify which calendar is used when creating an event or a task. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> s</span>elected</li>
+          <li class="li16">• personal</li>
+          <li class="li16">• f<span class="s1">irst</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">selected</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoDayStartTime</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The hour at which the day starts (0 through 12).</p>
+        <p class="p16">Defaults to 8 when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoDayEndTime</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The hour at which the day ends (12 through 23).</p>
+        <p class="p16">Defaults to 18 when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFirstDayOfWeek</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The day at which the week starts in the week and month views (0 through 6). 0 indicates Sunday.</p>
+        <p class="p16">Defaults to 0 when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFirstWeekOfYear</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to defined how is identified the first week of the year. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> Jan</span>uary1</li>
+          <li class="li16">• First4DayWeek</li>
+          <li class="li23"><span class="s5">• Fir</span>stFullWeek</li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">January1</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoTimeFormat</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The format used to display time in the timeline of the day and week views. Please refer to the documentation for the <i>date</i> command or the <i>strftime</i> C function for the list of available format sequence.</p>
+        <p class="p16">Defaults to <span class="s1">%H:%M</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarCategories</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the categories that can be associated to events. This parameter is an array of arbitrary strings.<br>
+Defaults to a list that depends on the language.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarDefaultCategoryColor</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the default colour of categories.<br>
+Defaults to <span class="s1">#F0F0F0</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarEventsDefaultClassification</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to defined the default classification for new events. Possible values are :</p>
+        <p class="p23"><span class="s5">•</span> PUBLIC</p>
+        <p class="p23"><span class="s5">•</span> CONFIDENTIAL</p>
+        <p class="p23"><span class="s5">•</span> PRIVATE</p>
+        <p class="p16">Defaults to <span class="s1">PUBLIC</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarTasksDefaultClassification</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to defined the default classification for new tasks. Possible values are :</p>
+        <p class="p23"><span class="s5">•</span> PUBLIC</p>
+        <p class="p23"><span class="s5">•</span> CONFIDENTIAL</p>
+        <p class="p23"><span class="s5">•</span> PRIVATE</p>
+        <p class="p16">Defaults to <span class="s1">PUBLIC</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoCalendarDefaultReminder</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to defined a default reminder for new events. Possible values are :</p>
+        <p class="p23"><span class="s5">• </span>-PT5M</p>
+        <p class="p23"><span class="s5">• </span>-PT10M</p>
+        <p class="p23"><span class="s5">• </span>-PT15M</p>
+        <p class="p23"><span class="s5">• </span>-PT30M</p>
+        <p class="p16">• <span class="s1">-</span>PT45M</p>
+        <p class="p23"><span class="s5">• </span>-PT1H</p>
+        <p class="p23"><span class="s5">• </span>-PT2H</p>
+        <p class="p23"><span class="s5">• </span>-PT5H</p>
+        <p class="p23"><span class="s5">• </span>-PT15H</p>
+        <p class="p23"><span class="s5">• </span>-P1D</p>
+        <p class="p23"><span class="s5">• </span>-P2D</p>
+        <p class="p23"><span class="s5">• </span>-P1W</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoFreeBusyDefaultInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The number of days to include in the free busy information. The parameter is an array of two numbers, the first being the number of days prior to the current day and the second being the number of days following the current day.</p>
+        <p class="p16">Defaults to <span class="s1">(7, 7)</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoBusyOffHours</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to specify if off-hours should be automatically added to the free-busy information. Off hours included weekends and periods covered between <span class="s1">SOGoDayEndTime</span> and <span class="s1">SOGoDayStartTime</span>.<br>
+Defaults to NO when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailMessageForwarding</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The method the message is to be forwarded. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> inl</span>ine</li>
+          <li class="li16">• att<span class="s1">ached</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">inline</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailCustomFullName</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The string to use as full name when composing an email, if <span class="s1">SOGoMailCustomFromEnabled</span> is set in the user's domain defaults. When unset, the full name specified in the user sources for the user is used instead.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailCustomEmail</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The string to use as email address when composing an email, if <span class="s1">SOGoMailCustomFromEnabled</span> is set in the user's domain defaults. When unset, the email specified in the user sources for the user is used instead.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailReplyPlacement</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The reply placement with respect to the quoted message. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> a</span>bove</li>
+          <li class="li16">• b<span class="s1">elow</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">below.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailReplyTo</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The email address to use in the “reply-to” header field when the user sends a message. Ignored when empty.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailSignaturePlacement</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The placement of the signature with respect to the quoted message. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> abov</span>e</li>
+          <li class="li16">• belo<span class="s1">w</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">below.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMailComposeMessageType</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">The message composition format. Possible values are :</p>
+        <ul class="ul1">
+          <li class="li16">•<span class="s1"> te</span>xt</li>
+          <li class="li16">• h<span class="s1">tml</span></li>
+        </ul>
+        <p class="p16">Defaults to <span class="s1">text.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoEnableEMailAlarms</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to enable email-based alarms on events and tasks.</p>
+        <p class="p16">Defaults to <span class="s3">NO</span> when unset.</p>
+        <p class="p16">For this feature to work correctly, one must also set the <span class="s3">OCSEMailAlarmsFolderURL</span> parameter and enable the associated <i>cronjob</i>.</p>
+        <p class="p16">See the “<i>Cronjob</i> — EMail reminders” section from this document for more information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">U</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoContactsCategories</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define the categories that can be associated to contacts. This parameter is an array of arbitrary strings.<br>
+Defaults to a list that depends on the language.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoUIAdditionalJSFiles</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define a list of additional JavaScript files loaded by SOGo for all displayed web pages. This parameter is an array of strings corresponding of paths to the arbitrary JavaScript files. The paths are relative to the <span class="s2">WebServerResources</span> directory, which is usually found under <span class="s2">/usr/lib/GNUstep/SOGo/.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoMailCustomFromEnabled</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to allow or not users to specify custom “From” addresses from SOGo's preferences panel.</p>
+        <p class="p16">Defaults to <span class="s3">NO</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoSubscriptionFolderFormat</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the default formatting of a subscription folder name. Available variables are:</p>
+        <p class="p23"><span class="s5">• </span>%{FolderName}</p>
+        <p class="p23"><span class="s5">• </span>%{UserName}</p>
+        <p class="p23"><span class="s5">• </span>%{Email}</p>
+        <p class="p23"><span class="s5">Defaults to </span>%{FolderName} (%{UserName} &lt;%{Email}&gt;)<span class="s5"> when unset.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">D</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p42">SOGoUIxAdditionalPreferences</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to enable an extra preferences tab using the content of the template named <span class="s1">UIxAdditionalPreferences.wox</span>. This template should be put under ~<span class="s1">sogo/GNUstep/Library/SOGo/Templates/PreferencesUI/</span>.</p>
+        <p class="p16">Defaults to <span class="s3">NO</span> when unset.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p38"><br></p>
+<p class="p14">SOGo Configuration Summary</p>
+<p class="p6">The complete SOGo configuration file <span class="s1">/etc/sogo/sogo.conf</span> should look like this :</p>
+<p class="p17">{</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoProfileURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>OCSFolderInfoURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>OCSSessionsFolderURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoAppointmentSendEMailNotifications = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoCalendarDefaultRoles = (</p>
+<p class="p17"><span class="Apple-converted-space">        </span>PublicViewer,</p>
+<p class="p17"><span class="Apple-converted-space">        </span>ConfidentialDAndTViewer</p>
+<p class="p17"><span class="Apple-converted-space">    </span>);</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoLanguage = English;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoMailDomain = acme.com;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoDraftsFolderName = Drafts;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoIMAPServer = localhost;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoUserSources = (</p>
+<p class="p17"><span class="Apple-converted-space">        </span>{</p>
+<p class="p17"><span class="Apple-converted-space">            </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>CNFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>IDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>UIDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>baseDN = "ou=users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">            </span>bindDN = "uid=sogo,ou=users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">            </span>bindPassword = qwerty;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>displayName = "Shared Addresses";</p>
+<p class="p17"><span class="Apple-converted-space">            </span>hostname = localhost;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>id = public;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>port = 389;</p>
+<p class="p17"><span class="Apple-converted-space">        </span>}</p>
+<p class="p17"><span class="Apple-converted-space">    </span>);</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoMailingMechanism = smtp;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoSMTPServer = 127.0.0.1;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoSentFolderName = Sent;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoTimeZone = America/Montreal;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoTrashFolderName = Trash;</p>
+<p class="p17">}</p>
+<p class="p14">Multi-domains Configuration</p>
+<p class="p6">If you want your installation to isolate two groups of users, you must define a distinct authentication source for each <i>domain</i>. Following is the same configuration that now includes two domains (acme.com and coyote.com) :</p>
+<p class="p17">{</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoProfileURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>OCSFolderInfoURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>OCSSessionsFolderURL =<br>
+<span class="Apple-converted-space">        </span>"postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoAppointmentSendEMailNotifications = YES;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoCalendarDefaultRoles = (</p>
+<p class="p17"><span class="Apple-converted-space">        </span>PublicViewer,</p>
+<p class="p17"><span class="Apple-converted-space">        </span>ConfidentialDAndTViewer</p>
+<p class="p17"><span class="Apple-converted-space">    </span>);</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoLanguage = English;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoMailingMechanism = smtp;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoSMTPServer = 127.0.0.1;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoSentFolderName = Sent;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoTimeZone = America/Montreal;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoTrashFolderName = Trash;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>SOGoIMAPServer = localhost;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>domains = {</p>
+<p class="p17"><span class="Apple-converted-space">        </span>acme = {</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoMailDomain = acme.com;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoDraftsFolderName = Drafts;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoUserSources = (</p>
+<p class="p17"><span class="Apple-converted-space">                </span>{</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>CNFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>IDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>UIDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>baseDN = "ou=users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>bindDN = "uid=sogo,ou=users,dc=acme,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>bindPassword = qwerty;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>displayName = "Shared Addresses";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>hostname = localhost;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>id = public_acme;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>port = 389;</p>
+<p class="p17"><span class="Apple-converted-space">                </span>}</p>
+<p class="p17"><span class="Apple-converted-space">            </span>);</p>
+<p class="p17"><span class="Apple-converted-space">        </span>};</p>
+<p class="p17"><span class="Apple-converted-space">        </span>coyote = {</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoMailDomain = coyote.com;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoIMAPServer = imap.coyote.com;</p>
+<p class="p17"><span class="Apple-converted-space">            </span>SOGoUserSources = (</p>
+<p class="p17"><span class="Apple-converted-space">                </span>{</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>type = ldap;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>CNFieldName = cn;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>IDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>UIDFieldName = uid;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>baseDN = "ou=users,dc=coyote,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>bindDN = "uid=sogo,ou=users,dc=coyote,dc=com";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>bindPassword = qwerty;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>canAuthenticate = YES;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>displayName = "Shared Addresses";</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>hostname = localhost;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>id = public_coyote;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>isAddressBook = YES;</p>
+<p class="p17"><span class="Apple-converted-space">                    </span>port = 389;</p>
+<p class="p17"><span class="Apple-converted-space">                </span>}</p>
+<p class="p17"><span class="Apple-converted-space">            </span>);</p>
+<p class="p17"><span class="Apple-converted-space">        </span>};</p>
+<p class="p17"><span class="Apple-converted-space">    </span>};</p>
+<p class="p17">}</p>
+<p class="p7"><br></p>
+<p class="p36">The following additional parameters only affect SOGo when using multiple domains.</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoEnableDomainBasedUID</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to activate user identification by domain. Users will be able (without being required) to login using the form <a href="mailto:username@domain"><span class="s1">username@domain</span></a>, meaning that values of <span class="s1">UIDFieldName</span> no longer have to be unique among all domains but only within the same domain. Internally, users will always be identified by the concatenation of their username and domain. Consequently, activating this parameter on an existing system implies that user identifiers<span class="Apple-converted-space">  </span>will change and their previous calendars and address books will no longer be accessible unless a conversion is performed.<br>
+Defaults to <span class="s1">NO</span> when unset.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoLoginDomains</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to define which domains should be selectable from the login page. This parameter is an array of keys from the <span class="s1">domains</span> dictionary.<br>
+Defaults to an empty array, which means that no domains appear on the login page. If you prefer having the domain names listed, just use these as keys for the the <span class="s1">domains</span> dictionary.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoDomainsVisibility</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set domains visible among themselves. This parameter is an array of arrays.<br>
+Example: <span class="s1">SOGoDomainsVisibility = ((acme, coyote));<br>
+</span>Defaults to an empty array, which means domains are isolated from each other.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p14">Apache Configuration</p>
+<p class="p6">The SOGo configuration for Apache is located in <span class="s1">/etc/httpd/conf.d/SOGo.conf</span>.</p>
+<p class="p6">Upon SOGo installation, a default configuration file is created which is suitable for most configurations.</p>
+<p class="p6">You must also configure the following parameters in the SOGo configuration file for Apache in order to have a working installation :</p>
+<p class="p19">RequestHeader set "x-webobjects-server-port" "80"<br>
+RequestHeader set "x-webobjects-server-name" "yourhostname"<br>
+RequestHeader set "x-webobjects-server-url" "http://yourhostname"</p>
+<p class="p6">You may consider enabling SSL on top of this current installation to secure access to your SOGo installation.</p>
+<p class="p6">See <a href="http://httpd.apache.org/docs/2.2/ssl/">http://httpd.apache.org/docs/2.2/ssl/</a> for details.</p>
+<p class="p6">You might also have to adjust the configuration if you have SELinux enabled.</p>
+<p class="p6">The default configuration will use <span class="s2">mod_proxy</span> and <span class="s2">mod_headers</span> to relay requests to the <span class="s2">sogod</span> parent process. This is suitable for small to medium deployments.</p>
+<p class="p14">Starting Services</p>
+<p class="p6">Once SOGo if fully installed and configured, start the services using the following command :</p>
+<p class="p17">service sogod start</p>
+<p class="p25"><br></p>
+<p class="p6">You may verify using the <span class="s4">chkconfig</span> command that the SOGo service is automatically started at boot time. Restart the Apache service since modules and configuration files were added :</p>
+<p class="p17">service httpd restart</p>
+<p class="p18"><br></p>
+<p class="p6">Finally, you should also make sure that the <span class="s1">memcached</span> service is started and that it is also automatically started at boot time.</p>
+<p class="p14"><i>Cronjob</i> — EMail reminders</p>
+<p class="p39">SOGo allows you to set email-based reminders for events and tasks. To enable this, you must enable the <span class="s2">SOGoEnableEMailAlarms</span> preference and set the <span class="s2">OCSEMailAlarmsFolderURL</span> preference accordingly.</p>
+<p class="p39">Once you've correctly set those two preferences, you must create a <i>cronjob</i> that will run under the “sogo” user. This <i>cronjob</i> should be run every minute.</p>
+<p class="p6"><span class="s3">A commented out e</span>xample should have been installed in <span class="s1">/etc/cron.d/sogo</span>, to enable it, simply uncomment it.</p>
+<p class="p39">As a reference, the <i>cronjob</i> should de defined like this:</p>
+<p class="p17">* * * * * <span class="Apple-converted-space">      </span>/usr/sbin/sogo-ealarms-notify</p>
+<p class="p6">If your mail server requires use of SMTP AUTH, specify a credential file using <span class="s2">-p /path/to/credFile</span>.<span class="Apple-converted-space">  </span>This file should contain the username and password, separated by a colon (username:password)</p>
+<p class="p14"><i>Cronjob</i> — Vacation messages expiration</p>
+<p class="p6">When vacation messages are enabled (see the parameter <span class="s2">SOGoVacationEnabled</span>), users can set an expiration date to messages auto-reply. For this feature to work, you must run a <i>cronjob</i> under the “sogo” user.</p>
+<p class="p6">A commented out example should have been installed in <span class="s1">/etc/cron.d/sogo</span>.<span class="Apple-converted-space">  </span>To work correctly this tool must login as an administrative user on the sieve server. The required credentials must be specified in a file by using <span class="s2">-p /path/to/credFile</span>.<span class="Apple-converted-space">  </span>This file should contain the username and password, separated by a colon (username:password)</p>
+<p class="p6">The <i>cronjob</i> should look like this :</p>
+<p class="p17">0 0 * * * <span class="Apple-converted-space">  </span>sogo /usr/sbin/sogo-tool expire-autoreply -p /etc/sogo/sieve.creds</p>
+<p class="p9">Managing User Accounts</p>
+<p class="p14">Creating the SOGo Administrative Account</p>
+<p class="p6">First, create the SOGo administrative account in your LDAP server. The following LDIF file (<span class="s1">sogo.ldif</span>) can be used as an example :</p>
+<p class="p17">dn: uid=sogo,ou=users,dc=acme,dc=com</p>
+<p class="p17">objectClass: top</p>
+<p class="p17">objectClass: inetOrgPerson</p>
+<p class="p17">objectClass: person</p>
+<p class="p17">objectClass: organizationalPerson</p>
+<p class="p17">uid: sogo</p>
+<p class="p17">cn: SOGo Administrator<span class="Apple-converted-space"> </span></p>
+<p class="p17">mail: sogo@acme.com</p>
+<p class="p17">sn: Administrator</p>
+<p class="p17">givenName: SOGo</p>
+<p class="p25"><br></p>
+<p class="p6">Load the LDIF file inside your LDAP server using the following command :</p>
+<p class="p17">ldapadd -f sogo.ldif -x -w qwerty -D cn=Manager,dc=acme,dc=com</p>
+<p class="p18"><br></p>
+<p class="p6">Finally, set the password (to the value “qwerty”) of the SOGo administrative account using the following command :</p>
+<p class="p17">ldappasswd -h localhost -x -w qwerty -D cn=Manager,dc=acme,dc=com uid=sogo,ou=users,dc=acme,dc=com -s qwerty</p>
+<p class="p7"><br></p>
+<p class="p14">Creating a User Account</p>
+<p class="p6">SOGo uses LDAP directories to authenticate users. Use the following LDIF file (<span class="s1">jdoe.ldif</span>) as an example to create a SOGo user account :</p>
+<p class="p17">dn: uid=jdoe,ou=users,dc=acme,dc=com</p>
+<p class="p17">objectClass: top</p>
+<p class="p17">objectClass: inetOrgPerson</p>
+<p class="p17">objectClass: person</p>
+<p class="p17">objectClass: organizationalPerson</p>
+<p class="p17">uid: jdoe</p>
+<p class="p17">cn: John Doe</p>
+<p class="p17">mail: jdoe@acme.com</p>
+<p class="p17">sn: Doe</p>
+<p class="p17">givenName: John</p>
+<p class="p25"><br></p>
+<p class="p6">Load the LDIF file inside your LDAP server using the following command :</p>
+<p class="p17">ldapadd -f jdoe.ldif -x -w qwerty -D cn=Manager,dc=acme,dc=com</p>
+<p class="p25"><br></p>
+<p class="p6">Finally, set the password (to the value “qwerty”) of the SOGo administrative account using the following command :</p>
+<p class="p17">ldappasswd -h localhost -x -w qwerty -D cn=Manager,dc=acme,dc=com uid=jdoe,ou=users,dc=acme,dc=com -s qwerty</p>
+<p class="p25"><br></p>
+<p class="p6">As an alternative to using command-line tools, you can also use LDAP editors such as <i>Luma</i> or <i>Apache Directory Studio</i> to make your work easier. These GUI utilities can make use of templates to create and pre-configure typical user accounts or any standardized LDAP record, along with the correct object classes, fields and default values.</p>
+<p class="p9">Microsoft ActiveSync</p>
+<p class="p6">SOGo supports the Microsoft ActiveSync protocol.</p>
+<p class="p6">ActiveSync clients can fully synchronize contacts, emails, events and tasks with SOGo. Freebusy and GAL lookups are also supported, as well as “Smart reply” and “Smart forward” operations.</p>
+<p class="p6">To enable Microsoft ActiveSync support in SOGo, you must install the required packages.</p>
+<p class="p17">yum install sogo-activesync libwbxml</p>
+<p class="p18"><br></p>
+<p class="p6">Once installed, simply uncomment the following lines from your SOGo Apache configuration:</p>
+<p class="p17">ProxyPass /Microsoft-Server-ActiveSync \</p>
+<p class="p17"><span class="Apple-tab-span">	</span><a href="http://127.0.0.1:20000/SOGo/Microsoft-Server-ActiveSync">http://127.0.0.1:20000/SOGo/Microsoft-Server-ActiveSync</a> \</p>
+<p class="p17"><span class="Apple-tab-span">	</span>retry=60 connectiontimeout=5 timeout=360</p>
+<p class="p18"><br></p>
+<p class="p6">Restart Apache afterwards.</p>
+<p class="p36">The following additional parameters only affect SOGo when using ActiveSync:</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumPingInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the maximum amount of time, in seconds, SOGo will wait before replying to a Ping command. If not set, it defaults to 5 seconds.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumSyncInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the maximum amount of time, in seconds, SOGo will wait before replying to a Sync command. If not set, it defaults to 30 seconds.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoInternalSyncInterval</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to set the maximum amount of time, in seconds, SOGo will wait before doing an internal check for data changes (add, delete, and update). This parameter must be lower than <span class="s1">SOGoMaximumSyncInterval</span>. If not set, it defaults to 10 seconds.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p20">S</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">SOGoMaximumSyncWindowSize</p>
+      </td>
+      <td valign="middle" class="td1">
+        <p class="p16">Parameter used to overwrite the maximum number of items returned during a Sync operation. Defaults to 0, which means no overwrite is performed. Setting this parameter to a value greater than 512 will have unexpected behaviour with various ActiveSync clients.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p6">Please be aware of the following limitations:</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Currently, only the personal calendar and address book are synchronized. Adding support for all folders is planned.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>When creating an Outlook 2013 profile, you must actually kill Outlook before the end of the creation process. See <a href="http://www.vionblog.com/connect-zimbra-community-with-outlook-2013">http://www.vionblog.com/connect-zimbra-community-with-outlook-2013</a> for a procedure example.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Outlook 2013 does not search the GAL. One possible alternative solution is to configure Outlook to use a LDAP server (over SSL) with authentication. Alternatively, when supporting more than just the personal address book, we'll also be able to expose the LDAP/SQL based address books in SOGo over ActiveSync.<span class="Apple-converted-space"> </span></p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Make sure you do not use a self-signed certificate. While this will work, Outlook will work intermittently as it will raise popups for certificate validation, sometimes in background, preventing the user to see the warning and thus, preventing any synchronization to happen.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>ActiveSync clients keep connections open for a while. Each connection will grab a hold on a sogod process so you will need a lot of processes to handle many clients. This limitation will eventually be overcome in SOGo.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Repetitive events with occurrences exceptions are currently not supported.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Outlook 2013 Autodiscovery is currently not supported.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Outlook 2013 freebusy lookups are supported using the Internet Free/Busy feature of Outlook 2013. Please see <a href="http://support.microsoft.com/kb/291621">http://support.microsoft.com/kb/291621</a> for configuration instructions. On the SOGo side, <span class="s2">SOGoEnablePublicAccess</span> must be set to YES and the URL to use must be of the following format: <span class="s2">http://&lt;hostname&gt;/SOGo/dav/public/%NAME%/freebusy.ifb</span><span class="Apple-converted-space"> </span></p>
+<p class="p53"><br></p>
+<p class="p6">In order to use the SOGo ActiveSync support code in production environments, you need to get a proper usage license from Microsoft. Please contact them directly to negotiate the fees associated to your user base.</p>
+<p class="p6">To contact Microsoft, please visit:</p>
+<p class="p6"><a href="http://www.microsoft.com/en-us/legal/intellectualproperty/IPLicensing/Programs/exchangeactivesyncprotocol.aspx">http://www.microsoft.com/en-us/legal/intellectualproperty/IPLicensing/Programs/exchangeactivesyncprotocol.aspx</a><span class="Apple-converted-space"> </span></p>
+<p class="p6">and send an email to <a href="mailto:iplicreq@microsoft.com">iplicreq@microsoft.com</a></p>
+<p class="p6">Inverse inc. provides this software for free, but is not responsible for anything related to its usage.</p>
+<p class="p9">Using SOGo</p>
+<p class="p14">SOGo Web Interface</p>
+<p class="p6">To acces the SOGo Web Interface, point your Web browser, which is running from the same server where SOGo was installed, to the following URL : <a href="http://localhost/SOGo">http://localhost/SOGo</a></p>
+<p class="p6">Log in using the “jdoe” user and the “qwerty” password. The underlying database tables will automatically be created by SOGo.</p>
+<p class="p14">Mozilla Thunderbird and Lightning</p>
+<p class="p6">Alternatively, you can access SOGo with a GroupDAV and a CalDAV client. A typical well-integrated setup is to use Mozilla Thunderbird and Mozilla Lightning along with Inverse's <i>SOGo Connector</i> plug in to synchronize your address books and the Inverse's <i>SOGo Integrator</i> plug in to provide a complete integration of the features of SOGo into Thunderbird and Lightning. Refer to the documentation of Thunderbird to configure an initial IMAP account pointing to your SOGo server and using the user name and password mentioned above.</p>
+<p class="p6">With the SOGo Integrator plug in, your calendars and address books will be automatically discovered when you login in Thunderbird. This plug in can also propagate specific extensions and default user settings among your site. However, be aware that in order to use the SOGo Integrator plug in, you will need to repackage it with specific modifications. Please refer to the documentation published online:</p>
+<p class="p6"><a href="http://www.sogo.nu/downloads/documentation.html">http://www.sogo.nu/downloads/documentation.html</a>.</p>
+<p class="p6">If you only use the SOGo Connector plug in, you can still easily access your data.</p>
+<p class="p6">To access your personal address book:</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Choose Go &gt; Address Book.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Choose File &gt; New &gt; Remote Address Book.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Enter a significant name for your calendar in the Name field.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Type the following URL in the URL field:<br>
+<a href="http://localhost/SOGo/dav/jdoe/Contacts/personal/">http://&lt;hostname&gt;/SOGo/dav/jdoe/Contacts/personal/</a></p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Click on OK.<br>
+</p>
+<p class="p6">To access your personal calendar:</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Choose Go &gt; Calendar.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Choose Calendar &gt; New Calendar.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Select On the Network and click on Continue.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Select CalDAV.</p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Type the following URL in the URL field:<br>
+<a href="http://localhost/SOGo/dav/jdoe/Calendar/personal/">http://localhost/SOGo/dav/jdoe/Calendar/personal/</a></p>
+<p class="p12">❏<span class="Apple-tab-span">	</span>Click on Continue.</p>
+<p class="p53"><br></p>
+<p class="p14">Apple iCal</p>
+<p class="p6">Apple iCal can also be used as a client application for SOGo.</p>
+<p class="p6">To configure it so it works with SOGo, create a new account and specify, as the Account URL, an URL such as :</p>
+<p class="p6"><a href="http://localhost/SOGo/dav/jdoe/">http://localhost/SOGo/dav/jdoe/</a></p>
+<p class="p6">Note that the trailing slash is important for Apple iCal 3.</p>
+<p class="p14">Apple AddressBook</p>
+<p class="p6">Since Mac OS X 10.6 (Snow Leopard), Apple AddressBook can be configured to use SOGo.</p>
+<p class="p6">In order to make this work, you must add a new virtual host in your Apache configuration file to listen on port 8800 and handle requests coming from iOS devices.</p>
+<p class="p6">The virtual host should be defined like :</p>
+<p class="p17">&lt;VirtualHost *:8800&gt;</p>
+<p class="p17"><span class="Apple-converted-space">  </span>RewriteEngine Off</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyRequests Off</p>
+<p class="p17"><span class="Apple-converted-space">  </span>SetEnv proxy-nokeepalive 1</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyPreserveHost On</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyPassInterpolateEnv On</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyPass /principals http://127.0.0.1:20000/SOGo/dav/ interpolate</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyPass /SOGo http://127.0.0.1:20000/SOGo interpolate</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ProxyPass / http://127.0.0.1:20000/SOGo/dav/ interpolate</p>
+<p class="p18"><br></p>
+<p class="p17"><span class="Apple-converted-space">  </span>&lt;Location /&gt;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>Order allow,deny</p>
+<p class="p17"><span class="Apple-converted-space">    </span>Allow from all</p>
+<p class="p17"><span class="Apple-converted-space">  </span>&lt;/Location&gt;</p>
+<p class="p17"><span class="Apple-converted-space">  </span>&lt;Proxy http://127.0.0.1:20000&gt;</p>
+<p class="p17"><span class="Apple-converted-space">    </span>RequestHeader set "x-webobjects-server-port" "8800"</p>
+<p class="p17"><span class="Apple-converted-space">    </span>RequestHeader set "x-webobjects-server-name" "acme.com:8800"</p>
+<p class="p17"><span class="Apple-converted-space">    </span>RequestHeader set "x-webobjects-server-url" "http://acme.com:8800"</p>
+<p class="p17"><span class="Apple-converted-space">    </span>RequestHeader set "x-webobjects-server-protocol" "HTTP/1.0"</p>
+<p class="p17"><span class="Apple-converted-space">    </span>RequestHeader set "x-webobjects-remote-host" "127.0.0.1"</p>
+<p class="p17"><span class="Apple-converted-space">    </span>AddDefaultCharset UTF-8</p>
+<p class="p17"><span class="Apple-converted-space">  </span>&lt;/Proxy&gt;</p>
+<p class="p17"><span class="Apple-converted-space">  </span>ErrorLog /var/log/apache2/ab-error.log</p>
+<p class="p17"><span class="Apple-converted-space">  </span>CustomLog /var/log/apache2/ab-access.log combined</p>
+<p class="p17">&lt;/VirtualHost&gt;</p>
+<p class="p7"><br></p>
+<p class="p6">This configuration is also required if you want to configure a CardDAV account on an Apple iOS device (version 4.0 and later).</p>
+<p class="p7"><br></p>
+<p class="p14">Microsoft ActiveSync / Mobile Devices</p>
+<p class="p6">You can synchronize contacts, emails, events and tasks from SOGo with any mobile devices that support Microsoft ActiveSync. Microsoft Outlook 2013 is also supported.</p>
+<p class="p6">The Microsoft ActiveSync server URL is generally something like: <a href="http://localhost/Microsoft-Active-Sync">http://&lt;hostname&gt;/Microsoft-Active-Sync</a> .</p>
+<p class="p9">Upgrading</p>
+<p class="p6">This section describes what needs to be done when upgrading to the current version of SOGo from the previous release.</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>2.0.5</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">The configuration is now stored in /etc/sogo/sogo.conf. Perform the following commands as root to migrate your previous user defaults:</p>
+        <p class="p13"><br></p>
+        <p class="p23">install -d -m 750 -o sogo -g sogo /etc/sogo</p>
+        <p class="p23">sudo -u sogo sogo-tool dump-defaults &gt; /etc/sogo/sogo.conf</p>
+        <p class="p23">chown root:sogo /etc/sogo/sogo.conf</p>
+        <p class="p23">chmod 640 /etc/sogo/sogo.conf</p>
+        <p class="p23">sudo -u sogo mv ~/GNUstep/Defaults/.GNUstepDefaults \<br>
+<span class="Apple-converted-space">    </span>~/GNUstep/Defaults/GNUstepDefaults.old</p>
+        <p class="p13"><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>2.0.4</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">The parameter <span class="s1">SOGoForceIMAPLoginWithEmail</span> is now deprecated and is replaced by <span class="s1">SOGoForceExternalLoginWithEmail</span> (which extends the functionality to SMTP authentication). Update your configuration if you use this parameter.</p>
+        <p class="p13"><br></p>
+        <p class="p16">The sogo user is now a system user. For new installs, this means that “<span class="s1">su - sogo</span>“ won't work anymore. Please use “<span class="s1">sudo -u sogo &lt;cmd&gt;</span>” instead. If used in scripts from cronjobs, <i>requiretty</i> must be disabled in sudoers.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>1.3.17</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p23"><span class="s5">Run the shell script </span>sql-update-1.3.16_to_1.3.17.sh<span class="s5"> or </span>sql-update-1.3.16_to_1.3.17-mysql.sh<span class="s5"> (if you use MySQL).</span></p>
+        <p class="p13"><br></p>
+        <p class="p16">This will grow the “cycle info” field of calendar tables to a larger size.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>1.3.12</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">Once you have updated and restarted SOGo, run the shell script <span class="s1">sql-update-1.3.11_to_1.3.12.sh </span>or <span class="s1">sql-update-1.3.11_to_1.3.12-mysql.sh (</span>if you use MySQL).</p>
+        <p class="p13"><br></p>
+        <p class="p16">This will grow the “content” field of calendar and addressbook tables to a larger size and fix the primary key of the session table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16"><b>1.3.9</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p16">For Red Hat-based distributions, version 1.23 of GNUstep will be installed. Since the location of the Web resources changes, the Apache configuration file (SOGo.conf) has been adapted. Verify your Apache configuration if you have customized this file.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p7"><br></p>
+<p class="p9">Additional Information</p>
+<p class="p6">For more information, please consult the online FAQs (Frequently Asked Questions) :</p>
+<p class="p6"><a href="http://www.sogo.nu/english/support/faq.html">http://www.sogo.nu/english/support/faq.html</a></p>
+<p class="p6">You can also read the mailing archives or post your questions to it. For details, see :</p>
+<p class="p6"><a href="https://lists.inverse.ca/sogo">https://lists.inverse.ca/sogo</a></p>
+<p class="p9">Commercial Support and Contact Information</p>
+<p class="p6">For any questions or comments, do not hesitate to contact us by writing an email to :</p>
+<p class="p6"><a href="mailto:support@inverse.ca">support@inverse.ca</a></p>
+<p class="p6">Inverse (<a href="http://inverse.ca/">http://inverse.ca</a>) offers professional services around SOGo to help organizations deploy the solution and migrate from their legacy systems.</p>
+</body>
+</html>
