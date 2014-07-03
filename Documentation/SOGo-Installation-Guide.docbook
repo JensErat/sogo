@@ -5,7 +5,11 @@
 
 <book lang="en">
 <bookinfo>
-    <date>2014-06-26</date>
+    <title>Installation and Configuration Guide</title>
+    <author>
+        <firstname>­</firstname>
+    </author>
+    <authorinitials>­</authorinitials>
 <!-- TODO have the build system take care of this  -->
 <releaseinfo>Version 4.2.0 - May 2014</releaseinfo>
 <subtitle>for version 4.2.0</subtitle>
@@ -133,7 +137,8 @@
   </author>
 </authorgroup>
 </bookinfo>
-<simpara>­</simpara>
+<preface>
+<title></title>
 <simpara>version 2.2.5</simpara>
 <simpara><emphasis>Installation and Configuration Guide</emphasis></simpara>
 <simpara>Copyright © 2008-2014 Inverse inc.
@@ -146,6 +151,7 @@ Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. </simpara>
 tohttp://www.gnu.org/licenses/fdl-1.2.txt[<ulink url="http://www.gnu.org/licenses/fdl-1.2.txt]for">http://www.gnu.org/licenses/fdl-1.2.txt]for</ulink>
 the full license.</simpara>
 <simpara>Version 2.2.5 – May 2014</simpara>
+</preface>
 <chapter id="_contents">
 <title>Contents</title>
 </chapter>
@@ -168,15 +174,37 @@ and by using a native client such as Mozilla Thunderbird and Lightning.</simpara
 and iTIP and reuses existing IMAP, SMTP and database servers - making
 the solution easy to deploy and interoperable with many applications.</simpara>
 <simpara>SOGo features :</simpara>
-<simpara>❏Scalable architecture suitable for deployments from dozens to many
-thousands of users</simpara>
-<simpara>❏Rich Web-based interface that shares the look and feel, the features
-and the data of Mozilla Thunderbird and Lightning</simpara>
-<simpara>❏Improved integration with Mozilla Thunderbird and Lightning by using
-the SOGo Connector and the SOGo Integrator</simpara>
-<simpara>❏Native compatibility for Microsoft Outlook 2003, 2007, 2010, and 2013</simpara>
-<simpara>❏Two-way synchronization support with any Microsoft ActiveSync-capable
-device, or Outlook 2013</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Scalable architecture suitable for deployments from dozens to many
+thousands of users
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Rich Web-based interface that shares the look and feel, the features
+and the data of Mozilla Thunderbird and Lightning
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Improved integration with Mozilla Thunderbird and Lightning by using
+the SOGo Connector and the SOGo Integrator
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Native compatibility for Microsoft Outlook 2003, 2007, 2010, and 2013
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Two-way synchronization support with any Microsoft ActiveSync-capable
+device, or Outlook 2013
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara>SOGo is developed by a community of developers located mainly in North
 America and Europe. More information can be found
 athttp://www.sogo.nu/[<ulink url="http://www.sogo.nu">http://www.sogo.nu</ulink>]</simpara>
@@ -200,28 +228,28 @@ following :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-❏Database server (MySQL, PostgreSQL or Oracle)
+Database server (MySQL, PostgreSQL or Oracle)
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏LDAP server (OpenLDAP, Novell eDirectory, Microsoft Active Directory
+LDAP server (OpenLDAP, Novell eDirectory, Microsoft Active Directory
 and others) 
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏SMTP server (Postfix, Sendmail and others)
+SMTP server (Postfix, Sendmail and others)
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏IMAP server (Courier, Cyrus IMAP Server, Dovecot and others)
+IMAP server (Courier, Cyrus IMAP Server, Dovecot and others)
 </simpara>
 </listitem>
 </itemizedlist>
 <simpara>In this guide, we assume that all those components are running on the
-same server (i.e., “`localhost`” or “`127.0.0.1`”) that SOGo will be
+same server (i.e., “+localhost+” or “+127.0.0.1+”) that SOGo will be
 installed on.</simpara>
 <simpara>Good understanding of those underlying components and GNU/Linux is
 required to install SOGo. If you miss some of those required components,
@@ -234,12 +262,9 @@ components, together with version numbers :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="2">
-<colspec colname="col_1" colwidth="213*"/>
-<colspec colname="col_2" colwidth="213*"/>
+<colspec colname="col_1" colwidth="50*"/>
+<colspec colname="col_2" colwidth="50*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>Database server</simpara></entry>
@@ -270,12 +295,9 @@ desktops and mobile devices :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="2">
-<colspec colname="col_1" colwidth="213*"/>
-<colspec colname="col_2" colwidth="213*"/>
+<colspec colname="col_1" colwidth="50*"/>
+<colspec colname="col_2" colwidth="50*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>Server</simpara></entry>
@@ -301,22 +323,22 @@ supported by SOGo :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-❏Red Hat Enterprise Linux (RHEL) Server 5 and 6
+Red Hat Enterprise Linux (RHEL) Server 5 and 6
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏Community ENTerprise Operating System (CentOS) 5 and 6
+Community ENTerprise Operating System (CentOS) 5 and 6
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏Debian GNU/Linux 5.0 (Lenny) to 7.0 (Wheezy)
+Debian GNU/Linux 5.0 (Lenny) to 7.0 (Wheezy)
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏Ubuntu 10.04 (Lucid) to 14.04 (Trusty)
+Ubuntu 10.04 (Lucid) to 14.04 (Trusty)
 *
 </simpara>
 </listitem>
@@ -343,12 +365,12 @@ with its dependencies. The steps described here apply to an RPM-based
 installation for a Red Hat or CentOS distribution.</simpara>
 <section id="_software_downloads">
 <title>Software Downloads</title>
-<simpara>SOGo can be installed using the`yum`utility. To do so, first create
-the`/etc/yum.repos.d/inverse.repo`configuration file with the following
+<simpara>SOGo can be installed using the+yum+utility. To do so, first create
+the+/etc/yum.repos.d/inverse.repo+configuration file with the following
 content : </simpara>
 <simpara><literal>[SOGo]</literal> <literal>name=Inverse SOGo Repository</literal>
 <literal>baseurl=http://inverse.ca/downloads/SOGo/RHEL6/$basearch</literal>
-`gpgcheck=0     `</simpara>
++gpgcheck=0    <?asciidoc-br?></simpara>
 <simpara>Some of the softwares on which SOGo depends are available from the
 repository of RepoForge (previously known as RPMforge). To add RepoForge
 to your packages sources, download and install the appropriate RPM
@@ -367,8 +389,8 @@ command :</simpara>
 <simpara>This will install SOGo and its dependencies such as GNUstep, the SOPE
 packages and memcached. Once the base packages are installed, you need
 to install the proper database connector suitable for your environment.
-You need to install`sope49-gdl1-postgresql`for the PostgreSQL database
-system,`sope49-gdl1-mysql`for MySQL or`sope49-gdl1-oracle`for Oracle.
+You need to install+sope49-gdl1-postgresql+for the PostgreSQL database
+system,+sope49-gdl1-mysql+for MySQL or+sope49-gdl1-oracle+for Oracle.
 The installation command will thus look like this :</simpara>
 <simpara><literal>yum install sope49-gdl1-postgresql</literal></simpara>
 <simpara>Once completed, SOGo will be fully installed on your server. You are now
@@ -391,9 +413,9 @@ Among those facilities, there is a configuration API similar to the
 "Registry" paradigm in Microsoft Windows. In OpenSTEP, GNUstep and MacOS
 X, these are called the "user defaults".</simpara>
 <simpara>In SOGo, the user&#8217;s applications settings are stored
-in`/etc/sogo/sogo.conf`.   You can use your favourite text editor to
+in+/etc/sogo/sogo.conf+.   You can use your favourite text editor to
 modify the file.</simpara>
-<simpara>The`sogo.conf`file is a serialized_property list_. This simple format
+<simpara>The+sogo.conf+file is a serialized_property list_. This simple format
 encapsulates four basic data types: arrays, dictionaries (or hashes),
 strings and numbers. Numbers are represented as-is, except for booleans
 which can take the unquoted values “YES” and “NO”. Strings are not
@@ -418,7 +440,7 @@ defined on three levels:</simpara>
 domain preferences define the defaults values of the user preferences,
 and the system preferences define the default values of all domains
 preferences. Both system and domains preferences are defined in
-the`/etc/sogo/sogo.conf`, while the users preferences are configurable
+the+/etc/sogo/sogo.conf+, while the users preferences are configurable
 by the user and stored in SOGo&#8217;s database.</simpara>
 <simpara>To identify the level in which each parameter can be defined, we use the
 following abbreviations in the tables of this document :</simpara>
@@ -426,12 +448,9 @@ following abbreviations in the tables of this document :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="2">
-<colspec colname="col_1" colwidth="213*"/>
-<colspec colname="col_2" colwidth="213*"/>
+<colspec colname="col_1" colwidth="50*"/>
+<colspec colname="col_2" colwidth="50*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -458,13 +477,10 @@ parameter to be defined at a parent level.</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -472,7 +488,7 @@ rowsep="1" colsep="1"
 <entry align="left" valign="top"><simpara>The amount of instances of SOGo that will be spawned
 to handle multiple requests simultaneously. When started from the init
 script, that amount is overriden by the “PREFORK” value
-in`/etc/sysconfig/sogo`or`/etc/default/sogo`. A value of 3 is a
+in+/etc/sysconfig/sogo+or+/etc/default/sogo+. A value of 3 is a
 reasonable default for low usage. The maximum value depends on the CPU
 and IO power provided by your machine : a value set too high will
 actually decrease performances under high load.<?asciidoc-br?>
@@ -490,22 +506,22 @@ lots of incoming connections. Defaults to 5 when unset.</simpara></entry>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>WOPort</simpara></entry>
 <entry align="left" valign="top"><simpara>The TCP listening address and port used by the SOGo
-daemon. The format is`ipaddress:port` <?asciidoc-br?>
+daemon. The format is+ipaddress:port+ <?asciidoc-br?>
 Defaults to 127.0.0.1:20000when unset.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>WOLogFile</simpara></entry>
-<entry align="left" valign="top"><simpara>The file path where to log messages. Specify`-<literal>to log to
-the console. +
-Defaults to</literal>/var/log/sogo/sogo.log`.</simpara></entry>
+<entry align="left" valign="top"><simpara>The file path where to log messages. Specify+ -<literal>to log to
+the console.<?asciidoc-br?>
+Defaults to</literal>/var/log/sogo/sogo.log+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>WOPidFile</simpara></entry>
 <entry align="left" valign="top"><simpara>The file path where the parent process id will be
 written.<?asciidoc-br?>
-Defaults to`/var/run/sogo/sogo.pid`.</simpara></entry>
+Defaults to+/var/run/sogo/sogo.pid+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -518,7 +534,7 @@ Defaults to`/var/run/sogo/sogo.pid`.</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set the maximum amount of memory (in
 megabytes) that a child can use. Reaching that value will force children
 processes to restart, in order to preserve system memory.<?asciidoc-br?>
-Defaults to`384`.</simpara></entry>
+Defaults to+384+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -530,7 +546,7 @@ Defaults to`384`.</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoCacheCleanupInterval</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set the expiration (in
 seconds) of each object in the cache.<?asciidoc-br?>
-Defaults to`300`.</simpara></entry>
+Defaults to+300+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -773,66 +789,100 @@ purpose (see the section_Authentication using SQL_later in this
 document). Insert the following text into your configuration file to
 configure an authentication and global address book using an LDAP
 directory server :</simpara>
-<simpara><literal>SOGoUserSources = (</literal> `          {` `              type = ldap;`
-`              CNFieldName = cn;              IDFieldName = uid;`
-`              UIDFieldName = uid;`
-`              IMAPHostFieldName = mailHost;              baseDN = "ou=users,dc=acme,dc=com";              bindDN = "uid=sogo,ou=users,dc=acme,dc=com";              bindPassword = qwerty;`
-`              canAuthenticate = YES;`
-`              displayName = "Shared Addresses";`
-`              hostname = "ldap://127.0.0.1:389";`
-`              id = public;              isAddressBook = YES;`
-`          }` <literal>);</literal></simpara>
+<simpara><literal>SOGoUserSources = (</literal> +          {+ +              type = ldap;+
++              CNFieldName = cn;              IDFieldName = uid;+
++              UIDFieldName = uid;+
++              IMAPHostFieldName = mailHost;              baseDN = "ou=users,dc=acme,dc=com";              bindDN = "uid=sogo,ou=users,dc=acme,dc=com";              bindPassword = qwerty;+
++              canAuthenticate = YES;+
++              displayName = "Shared Addresses";+
++              hostname = "ldap://127.0.0.1:389";+
++              id = public;              isAddressBook = YES;+
++          }+ <literal>);</literal></simpara>
 <simpara>In our example, we use a LDAP server running on the same host where SOGo
 is being installed.</simpara>
 <simpara>You can also, using the filter attribute, restrict the results to match
 various criteria. For example, you could define, in
-your`.GNUstepDefaults`file, the following filter to return only entries
+your+.GNUstepDefaults+file, the following filter to return only entries
 belonging to the organization_Inverse_with a_mail_address and
 not_inactive_:</simpara>
-<simpara>`          filter = "(o=<emphasis>Inverse</emphasis> AND mail=<emphasis>*</emphasis> AND status &lt;&gt; <emphasis>inactive</emphasis>)";`</simpara>
+<bibliodiv>
+<bibliomixed>
+<bibliomisc>
+   filter = "(o=<emphasis>Inverse</emphasis> AND mail=<emphasis>*</emphasis> AND status &lt;&gt; <emphasis>inactive</emphasis>)";+
+</bibliomisc>
+</bibliomixed>
+</bibliodiv>
 <simpara>Since LDAP sources can serve as user repositories for authentication as
 well as address books, you can specify the following for each source to
 make them appear in the address book module:</simpara>
-<simpara>`         displayName = "&lt;human identification name of the address book&gt;";`
-`         isAddressBook = YES;`</simpara>
+<bibliodiv>
+<bibliomixed>
+<bibliomisc>
+  displayName = "&lt;human identification name of the address book&gt;";+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+  isAddressBook = YES;+
+</bibliomisc>
+</bibliomixed>
+</bibliodiv>
 <simpara>For certain LDAP sources, SOGo also supports indirect binds for user
 authentication. Here is an example :</simpara>
-<simpara><literal>SOGoUserSources = (</literal> `          {` `              type = ldap;`
-`              CNFieldName = cn;` `              IDFieldName = cn;`
-`              UIDFieldName = sAMAccountName;`
-`              baseDN = "cn=Users,dc=acme,dc=com";`
-`              bindDN = "cn=sogo,cn=Users,dc=acme,dc=com";`
-`              bindFields = (sAMAccountName);`
-`              bindPassword = qwerty;`
-`              canAuthenticate = YES;`
-`              displayName = "Active Directory";`
-`              hostname = ldap://10.0.0.1:389;`
-`              id = directory;` `              isAddressBook = YES;`
-`          }` <literal>);</literal></simpara>
+<simpara><literal>SOGoUserSources = (</literal> +          {+ +              type = ldap;+
++              CNFieldName = cn;+ +              IDFieldName = cn;+
++              UIDFieldName = sAMAccountName;+
++              baseDN = "cn=Users,dc=acme,dc=com";+
++              bindDN = "cn=sogo,cn=Users,dc=acme,dc=com";+
++              bindFields = (sAMAccountName);+
++              bindPassword = qwerty;+
++              canAuthenticate = YES;+
++              displayName = "Active Directory";+
++              hostname = ldap://10.0.0.1:389;+
++              id = directory;+ +              isAddressBook = YES;+
++          }+ <literal>);</literal></simpara>
 <simpara>In this example, SOGo will use an indirect bind by first determining the
 user DN. That value is found by doing a search on the fields specified
-in`bindFields`. Most of the time, there will be only one field but it is
+in+bindFields+. Most of the time, there will be only one field but it is
 possible to specify more in the form of an array (for
 example,<literal>bindFields = (sAMAccountName, cn)</literal>). When using multiple
 fields, only one of the fields needs to match the login name. In the
 above example, when a user logs in, the login will be checked against
-the`sAMAccountName` entry in all the user cards, and once this card is
+the+sAMAccountName+ entry in all the user cards, and once this card is
 found, the user DN of this card will be used for checking the user&#8217;s
 password.</simpara>
 <simpara>Finally, SOGo supports LDAP-based groups. Groups must be defined like
-any other authentication sources (ie.,`canAuthenticate`must be set
-to`YES`and a group must have a valid email address). In order for SOGo
+any other authentication sources (ie.,+canAuthenticate+must be set
+to+YES+and a group must have a valid email address). In order for SOGo
 to determine if a specific LDAP entry is a group, SOGo will look for one
 of the following objectClass attributes :</simpara>
-<simpara>❏group</simpara>
-<simpara>❏groupOfNames</simpara>
-<simpara>❏groupOfUniqueNames</simpara>
-<simpara>❏posixGroup</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+group
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+groupOfNames
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+groupOfUniqueNames
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+posixGroup
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara>You can set ACLs based on group membership and invite a group to a
 meeting (and the group will be decomposed to its list of members upon
 save by SOGo). You can also control the visibility of the group from the
 list of shared address books or during mail autocompletion by setting
-the`isAddressBook`parameter to`YES`or`NO`. The following LDAP entry
+the+isAddressBook+parameter to+YES+or+NO+. The following LDAP entry
 shows how a typical group is defined :</simpara>
 <simpara><literal>dn: cn=inverse,ou=groups,dc=inverse,dc=ca</literal>
 <literal>objectClass: groupOfUniqueNames</literal> <literal>objectClass: top</literal>
@@ -840,33 +890,76 @@ shows how a typical group is defined :</simpara>
 <literal>uniqueMember: uid=alice,ou=users,dc=inverse,dc=ca</literal>
 <literal>uniqueMember: uid=bernard,ou=users,dc=inverse,dc=ca</literal>
 <literal>uniqueMember: uid=bob,ou=users,dc=inverse,dc=ca</literal> <literal>cn: inverse</literal>
-<literal>structuralObjectClass: groupOfUniqueNames</literal> <literal>mail: inverse@inverse.ca</literal></simpara>
+<literal>structuralObjectClass: groupOfUniqueNames</literal> <literal>mail: <ulink url="mailto:inverse@inverse">inverse@inverse</ulink>.ca</literal></simpara>
 <simpara>The corresponding SOGoUserSources entry to handle groups like this one
 would be :</simpara>
-<simpara>`          {` `              type = ldap;`
-`              CNFieldName = cn;` `              IDFieldName = cn;`
-`              UIDFieldName = cn;`
-`              baseDN = "ou=groups,dc=inverse,dc=ca”;`
-`              bindDN = "cn=sogo,ou=services,dc=inverse,dc=ca";`
-`              bindPassword = zot;`
-`              canAuthenticate = YES;`
-`              displayName = “Inverse Groups”;`
-`              hostname = ldap://127.0.0.1:389;`
-`              id = inverse_groups;`
-`              isAddressBook = YES;` `          }`</simpara>
+<bibliodiv>
+<bibliomixed>
+<bibliomisc>
+   {+ +              type = ldap;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       CNFieldName = cn;+ +              IDFieldName = cn;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       UIDFieldName = cn;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       baseDN = "ou=groups,dc=inverse,dc=ca”;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       bindDN = "cn=sogo,ou=services,dc=inverse,dc=ca";+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       bindPassword = zot;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       canAuthenticate = YES;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       displayName = “Inverse Groups”;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       hostname = ldap://127.0.0.1:389;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       id = inverse_groups;+
+</bibliomisc>
+</bibliomixed>
+<bibliomixed>
+<bibliomisc>
+       isAddressBook = YES;+ +          }+
+</bibliomisc>
+</bibliomixed>
+</bibliodiv>
 <simpara>The following table describes the possible parameters related to a LDAP
 source :</simpara>
 <informaltable
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -880,7 +973,7 @@ LDAP source can contain the following values:</simpara></entry>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>type</simpara></entry>
 <entry align="left" valign="top"><simpara>the type of this user source, set
-to`ldap`for an LDAP source</simpara></entry>
+to+ldap+for an LDAP source</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
@@ -908,20 +1001,20 @@ SOGo domain</simpara></entry>
 login name of a user.<?asciidoc-br?>
 The returned value*must be unique across the whole SOGo
 installation*since it is used to identify the user in
-the`folder_info`database table.</simpara></entry>
+the+folder_info+database table.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>MailFieldNames</simpara></entry>
 <entry align="left" valign="top"><simpara>an array of fields that
-returns the user&#8217;s email addresses (defaults to`mail`when unset)</simpara></entry>
+returns the user&#8217;s email addresses (defaults to+mail+when unset)</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>SearchFieldNames</simpara></entry>
 <entry align="left" valign="top"><simpara>an array of fields to to
 match against the search string when filtering users (defaults
-to`sn`,<literal>displayName</literal>, and`telephoneNumber`when unset)</simpara></entry>
+to+sn+,<literal>displayName</literal>, and+telephoneNumber+when unset)</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
@@ -1089,7 +1182,7 @@ this LDAP source</simpara></entry>
 <entry align="left" valign="top"><simpara>this field enables LDAP-based user
 addressbooks by specifying the value of the address book container
 beneath each user entry, for
-example:<literal>ou=addressbooks,uid=username,dc=domain</literal></simpara></entry>
+example:+ou=addressbooks,uid=username,dc=domain+</simpara></entry>
 </row>
 </tbody>
 </tgroup>
@@ -1101,13 +1194,10 @@ system levels :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1141,22 +1231,22 @@ attributes must be fully indexed :</simpara>
 <itemizedlist>
 <listitem>
 <simpara>
-❏givenName
+givenName
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏cn
+cn
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏mail
+mail
 </simpara>
 </listitem>
 <listitem>
 <simpara>
-❏sn
+sn
 *
 </simpara>
 </listitem>
@@ -1244,8 +1334,8 @@ this:</simpara>
 <title>Authenticating using C.A.S.</title>
 <simpara>SOGo natively supports C.A.S. authentication. For activating C.A.S.
 authentication you need first to make sure that
-the`SOGoAuthenticationType`setting is set to “cas” and that
-the`SOGoCASServiceURL`setting is configured appropriately.</simpara>
+the+SOGoAuthenticationType+setting is set to “cas” and that
+the+SOGoCASServiceURL+setting is configured appropriately.</simpara>
 <simpara>The tricky part shows up when using SOGo as a frontend interface to an
 IMAP server as this imposes constraints needed by the C.A.S. protocol to
 ensure secure communication between the different services. Failing to
@@ -1256,7 +1346,7 @@ be higher than 1 in order to enable the C.A.S.*service to perform some
 validation requests during IMAP authentication. A single worker alone
 would not, by definition, be able to respond to the C.A.S. requests
 while treating the user request that required the triggering of those
-requests. You must therefore configure the`WOWorkersCount`setting
+requests. You must therefore configure the+WOWorkersCount+setting
 appropriately.</simpara>
 <simpara>The second constraint is that*the* <emphasis role="strong">SOGo service must be accessible and
 accessed via https</emphasis>. Moreover, the certificate used by the SOGo server
@@ -1266,27 +1356,31 @@ to worry about. In the case of a self-signed certificate, the
 certificate must be registered in the trusted keystore of the C.A.S.
 application. The procedure to achieve this can be summarized as
 importing the certificate in the proper “keystore” using
-the`keytool`utility and specifying the path for that keystore to the
+the+keytool+utility and specifying the path for that keystore to the
 Tomcat instance which provides the C.A.S. service. This is done by
-tweaking the`javax.net.ssl.trustStore`setting, either in the
+tweaking the+javax.net.ssl.trustStore+setting, either in the
 catalina.properties file or in the command-line parameters. On debian,
 the SOGo certificate can also be added to the truststore as follows:</simpara>
-<simpara><literal>openssl x509 -in /etc/ssl/certs/sogo-cert.pem -outform DER \        -out /tmp/sogo-cert.derkeytool -import -keystore /etc/ssl/certs/java/cacerts \        -file /tmp/sogo-cert.der -alias sogo-cert# The keystore password is 'changeit'# tomcat must be restarted after this operation</literal></simpara>
+<simpara><literal>openssl x509 -in /etc/ssl/certs/sogo-cert.pem -outform DER \        -out /tmp/sogo-cert.derkeytool -import -keystore /etc/ssl/certs/java/cacerts \        -file /tmp/sogo-cert.der -alias sogo-cert# The keystore password is <emphasis>changeit</emphasis># tomcat must be restarted after this operation</literal></simpara>
 <simpara><emphasis role="strong">The certificate used by the CAS server must also be trusted by SOGo</emphasis>.
 In case of a self-signed certificate, this means exporting tomcat&#8217;s
-certificate using the `keytool`utility, converting it to PEM format and
+certificate using the +keytool+utility, converting it to PEM format and
 appending it to the ca-certificates.crt file. (The name and location of
 that file differs between distributions). Basically:</simpara>
-<simpara><literal># export tomcat's cert to openssl formatkeytool -keystore /etc/tomcat7/keystore -exportcert -alias tomcat | \        openssl x509 -inform der &gt;tomcat.pem       Enter keystore password: tomcat       # add the pem to the trusted certscp tomcat.pem /etc/ssl/certscat tomcat.pem &gt;&gt;/etc/ssl/certs/ca-certificates</literal></simpara>
+<simpara><literal># export tomcat&#8217;s cert to openssl formatkeytool -keystore /etc/tomcat7/keystore -exportcert -alias tomcat | \        openssl x509 -inform der &gt;tomcat.pem       Enter keystore password: tomcat       # add the pem to the trusted certscp tomcat.pem /etc/ssl/certscat tomcat.pem &gt;&gt;/etc/ssl/certs/ca-certificates</literal></simpara>
 <simpara>If any of those constraints is not satisfied, the webmail interface of
 SOGo will display an empty email account. Unfortunately, SOGo has no
 possibility to detect which one is the cause of the problem. The only
 indicators are log messages that at least pinpoint the symptoms:</simpara>
+<blockquote>
 <simpara><emphasis>“failure to obtain a PGT from the C.A.S. service”</emphasis></simpara>
+</blockquote>
 <simpara>Such an error will show up during authentication of the user to SOGo. It
 happens when the authentication service has accepted the user
 authentication ticket but has not returned a “Proxy Granting Ticket”.</simpara>
+<blockquote>
 <simpara><emphasis>“a CAS failure occurred during operation&#8230;.”</emphasis></simpara>
+</blockquote>
 <simpara>This error indicate that an attempt was made to retrieve an
 authentication ticket for a third-party service such as IMAP or sieve.
 Most of the time, this happens as a consequence to the problem described
@@ -1294,7 +1388,7 @@ above. To troubleshoot these issues, one should be tailing cas.log, pam
 logs and sogo logs.</simpara>
 <simpara>Currently, SOGo will ask for a CAS ticket using the same CAS service
 name for both IMAP and Sieve.<emphasis role="strong">When CASifying sieve, this means that the</emphasis>
-`         -s       ` <emphasis role="strong">parameter of</emphasis> `         pam_cas       ` <emphasis role="strong">should be
++         -s       + <emphasis role="strong">parameter of</emphasis> +         pam_cas       + <emphasis role="strong">should be
 the same for both IMAP and Sieve</emphasis>, otherwise the CAS server will
 complain:</simpara>
 <simpara>ERROR [org.jasig.cas.CentralAuthenticationServiceImpl] - ServiceTicket
@@ -1311,7 +1405,7 @@ connection properly.</simpara>
 documentation of your identity provider and the SAML2 configuration keys
 that are listed above for proper setup. Once a SOGo instance is
 configured properly, the metadata for that instance can be retrieved
-from`http://&lt;hostname&gt;/SOGo/saml2-metadata`for registration with the
+from+http://&lt;hostname&gt;/SOGo/saml2-metadata+for registration with the
 identity provider.</simpara>
 <simpara>In order to relay authentication information to your IMAP server and if
 you make use of the CrudeSAML SASL plugin, you need to make sure that
@@ -1333,7 +1427,7 @@ support enabled.</simpara>
 <literal>createuser --no-superuser --no-createdb –-no-createrole \       –-encrypted --pwprompt sogo</literal>
 <literal>(specify “sogo” as password)</literal> <literal>createdb -O sogo sogo</literal></simpara>
 <simpara>You should then adjust the access rights to the database. To do so,
-modify the configuration file`/var/lib/pgsql/data/pg_hba.conf`in order
+modify the configuration file+/var/lib/pgsql/data/pg_hba.conf+in order
 to add the following line at the very beginning of the file:</simpara>
 <simpara><literal>host   sogo   sogo     127.0.0.1/32     md5</literal></simpara>
 <simpara>Once added, restart the PostgreSQL database service. Then, modify the
@@ -1347,13 +1441,10 @@ settings :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1381,7 +1472,13 @@ PostgreSQL, the database URL could be set to something like :
 </tbody>
 </tgroup>
 </informaltable>
-<simpara>`       If you&#8217;re using MySQL, make       sure in yourmy.cnffile you have :                [mysqld]&#8230;character_set_server=utf8character_set_client=utf8       [client]default-character-set=utf8       [mysql]default-character-set=utf8                  and when you create the SOGo database, you correctly specify the charset :                create database sogo CHARSET=<emphasis>UTF8</emphasis>;      `</simpara>
+<bibliodiv>
+<bibliomixed>
+<bibliomisc>
+If you&#8217;re using MySQL, make       sure in yourmy.cnffile you have :                [mysqld]&#8230;character_set_server=utf8character_set_client=utf8       [client]default-character-set=utf8       [mysql]default-character-set=utf8                  and when you create the SOGo database, you correctly specify the charset :                create database sogo CHARSET=<emphasis>UTF8</emphasis>;     <?asciidoc-br?>
+</bibliomisc>
+</bibliomixed>
+</bibliodiv>
 </section>
 <section id="_authentication_using_sql">
 <title>Authentication using SQL</title>
@@ -1393,13 +1490,10 @@ SQL source :</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1413,7 +1507,7 @@ SQL source can contain the following values :</simpara></entry>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>type</simpara></entry>
 <entry align="left" valign="top"><simpara>the type of this user source, set
-to`sql`for a SQL source</simpara></entry>
+to+sql+for a SQL source</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
@@ -1448,13 +1542,13 @@ database. </simpara></entry>
 <entry align="left" valign="top"><simpara>prependPasswordScheme </simpara></entry>
 <entry align="left" valign="top"><simpara>The default
 behaviour is to store newly set passwords without the scheme
-(default:<literal>prependPasswordScheme = NO</literal>) .<?asciidoc-br?>
-This can be overridden by setting`prependPasswordScheme`to`YES`and will</simpara></entry>
+(default:+prependPasswordScheme = NO+) .<?asciidoc-br?>
+This can be overridden by setting+prependPasswordScheme+to+YES+and will</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>canAuthenticate</simpara></entry>
-<entry align="left" valign="top"><simpara>if set to`YES`, this SQL
+<entry align="left" valign="top"><simpara>if set to+YES+, this SQL
 source is used for authentication</simpara></entry>
 </row>
 <row>
@@ -1482,14 +1576,14 @@ book, the human identification name of the SQL repository</simpara></entry>
 <entry align="left" valign="top"><simpara>LoginFieldNames (optional)</simpara></entry>
 <entry align="left" valign="top"><simpara>an array of
 fields that specifies the column names that contain valid authentication
-usernames (defaults to`c_uid`when unset)</simpara></entry>
+usernames (defaults to+c_uid+when unset)</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>MailFieldNames (optional)</simpara></entry>
 <entry align="left" valign="top"><simpara>an array of
 fields that specifies the column names that hold additional email
-addresses (beside the`mail`column) for each user</simpara></entry>
+addresses (beside the+mail+column) for each user</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
@@ -1501,7 +1595,7 @@ returns the IMAP hostname for the user</simpara></entry>
 <entry align="left" valign="top"><simpara>[multiblock cell omitted]</simpara></entry>
 <entry align="left" valign="top"><simpara>IMAPLoginFieldName (optional)</simpara></entry>
 <entry align="left" valign="top"><simpara>the field
-that returns the IMAP login name for the user (defaults to`c_uid`when
+that returns the IMAP login name for the user (defaults to+c_uid+when
 unset)</simpara></entry>
 </row>
 <row>
@@ -1536,21 +1630,43 @@ information.</simpara></entry>
 </informaltable>
 <simpara>Here is an example of an SQL-based authentication and address book
 source:</simpara>
-<simpara><literal>SOGoUserSources =</literal> <literal>(</literal> `        {` `          type = sql;`
-`          id = directory;`
-`          viewURL = "postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_view";`
-`          canAuthenticate = YES;` `          isAddressBook = YES;`
-`          userPasswordAlgorithm = md5;` `        }`</simpara>
+<simpara><literal>SOGoUserSources =</literal> <literal>(</literal> +        {+ +          type = sql;+
++          id = directory;+
++          viewURL = "postgresql://sogo:sogo@127.0.0.1:5432/sogo/sogo_view";+
++          canAuthenticate = YES;+ +          isAddressBook = YES;+
++          userPasswordAlgorithm = md5;+ +        }+</simpara>
 <simpara>);</simpara>
 <simpara>Certain database columns must be present in the view/table, such as :</simpara>
-<simpara><literal>❏c_uid</literal>- will be used for authentication – it&#8217;s the username
-ormailto:username@domain.tld[<ulink url="mailto:username@domain.tld">username@domain.tld</ulink>])</simpara>
-<simpara><literal>❏c_name</literal>- which can be identical to c_uid – will be used to uniquely
-identify entries</simpara>
-<simpara>`❏c_password`– password of the user, plain-text, md5 or sha encoded for
-now</simpara>
-<simpara><literal>❏c_cn</literal>- the user&#8217;s common name – such as “John Doe”</simpara>
-<simpara>`❏mail`– the user&#8217;s mail address </simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+<literal>c_uid</literal> - will be used for authentication – it&#8217;s the username
+ormailto:username@domain.tld[<ulink url="mailto:username@domain.tld">username@domain.tld</ulink>])
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>c_name</literal> - which can be identical to c_uid – will be used to uniquely
+identify entries
+</simpara>
+</listitem>
+<listitem>
+<simpara>
++c_password+– password of the user, plain-text, md5 or sha encoded for
+now
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+<literal>c_cn</literal> - the user&#8217;s common name – such as “John Doe”
+</simpara>
+</listitem>
+<listitem>
+<simpara>
++mail+– the user&#8217;s mail address 
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara>Note that groups are currently not supported for SQL-based
 authentication sources.</simpara>
 </section>
@@ -1563,13 +1679,10 @@ iMIP/iTIP messages and various notifications.</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1580,7 +1693,7 @@ rowsep="1" colsep="1"
 <entry align="left" valign="top"><simpara>D</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoSMTPServer</simpara></entry>
 <entry align="left" valign="top"><simpara>The DNS name or IP address of the SMTP server used
-when`SOGoMailingMechanism`is set to`smtp`.</simpara></entry>
+when+SOGoMailingMechanism+is set to+smtp+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1593,7 +1706,7 @@ other values will be ignored.</simpara></entry>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>WOSendMail</simpara></entry>
 <entry align="left" valign="top"><simpara>The path of the sendmail binary.<?asciidoc-br?>
-Defaults to`/usr/lib/sendmail`.</simpara></entry>
+Defaults to+/usr/lib/sendmail+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1613,13 +1726,10 @@ messages, manage their folders and more.</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
@@ -1641,8 +1751,8 @@ rowsep="1" colsep="1"
 <entry align="left" valign="top"><simpara>SOGoIMAPCASServiceName</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set the CAS service name
 (URL) of the imap service. This is useful if SOGo is connecting to the
-IMAP service through a proxy. When using`pam_cas`, this parameter should
-be set to the same value as the`-s`argument of the imap pam service.</simpara></entry>
+IMAP service through a proxy. When using+pam_cas+, this parameter should
+be set to the same value as the+ -s+argument of the imap pam service.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1686,8 +1796,8 @@ other possible value is “UTF-8”.</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoMailSpoolPath</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set the path where temporary
 email drafts are written. If you change this value, you must also modify
-the daily cronjob`sogo-tmpwatch`.<?asciidoc-br?>
-Defaults to`/var/spool/sogo`.</simpara></entry>
+the daily cronjob+sogo-tmpwatch+.<?asciidoc-br?>
+Defaults to+/var/spool/sogo+.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -1725,19 +1835,16 @@ behaviour of SOGo.</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoPageTitle</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to define the Web page title.<?asciidoc-br?>
-Defaults to`SOGo`when unset.</simpara></entry>
+Defaults to+SOGo+when unset.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
@@ -1763,7 +1870,7 @@ used to archive messages. Defaults to /usr/bin/zip when unset.</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoSoftQuotaRatio</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to change the quota returned by
 the IMAP server by multiplying it by the specified ratio. Acts as a soft
-quota. Example:<literal>0.8</literal></simpara></entry>
+quota. Example:+0.8+</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
@@ -1857,7 +1964,7 @@ Defaults to a list that depends on the language.</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoCalendarDefaultCategoryColor</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to define the
 default colour of categories.<?asciidoc-br?>
-Defaults to`#F0F0F0`when unset.</simpara></entry>
+Defaults to+#F0F0F0+when unset.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
@@ -1885,7 +1992,7 @@ Defaults to`#F0F0F0`when unset.</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to specify if off-hours should be
 automatically added to the free-busy information. Off hours included
 weekends and periods covered
-between`SOGoDayEndTime`and`SOGoDayStartTime`.<?asciidoc-br?>
+between+SOGoDayEndTime+and+SOGoDayStartTime+.<?asciidoc-br?>
 Defaults to NO when unset.</simpara></entry>
 </row>
 <row>
@@ -1897,7 +2004,7 @@ Defaults to NO when unset.</simpara></entry>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoMailCustomFullName</simpara></entry>
 <entry align="left" valign="top"><simpara>The string to use as full name when
-composing an email, if`SOGoMailCustomFromEnabled`is set in the user&#8217;s
+composing an email, if+SOGoMailCustomFromEnabled+is set in the user&#8217;s
 domain defaults. When unset, the full name specified in the user sources
 for the user is used instead.</simpara></entry>
 </row>
@@ -1905,7 +2012,7 @@ for the user is used instead.</simpara></entry>
 <entry align="left" valign="top"><simpara>U</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoMailCustomEmail</simpara></entry>
 <entry align="left" valign="top"><simpara>The string to use as email address when
-composing an email, if`SOGoMailCustomFromEnabled`is set in the user&#8217;s
+composing an email, if+SOGoMailCustomFromEnabled+is set in the user&#8217;s
 domain defaults. When unset, the email specified in the user sources for
 the user is used instead.</simpara></entry>
 </row>
@@ -1950,8 +2057,8 @@ Defaults to a list that depends on the language.</simpara></entry>
 additional JavaScript files loaded by SOGo for all displayed web pages.
 This parameter is an array of strings corresponding of paths to the
 arbitrary JavaScript files. The paths are relative to
-the`WebServerResources`directory, which is usually found
-under`/usr/lib/GNUstep/SOGo/.`</simpara></entry>
+the+WebServerResources+directory, which is usually found
+under+/usr/lib/GNUstep/SOGo/.+</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>D</simpara></entry>
@@ -1974,37 +2081,37 @@ under`/usr/lib/GNUstep/SOGo/.`</simpara></entry>
 </section>
 <section id="_sogo_configuration_summary">
 <title>SOGo Configuration Summary</title>
-<simpara>The complete SOGo configuration file`/etc/sogo/sogo.conf`should look
+<simpara>The complete SOGo configuration file+/etc/sogo/sogo.conf+should look
 like this :</simpara>
 <simpara><literal>{</literal>
-`          SOGoProfileURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";`
-`          OCSFolderInfoURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";`
-`          OCSSessionsFolderURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";`
-`          SOGoAppointmentSendEMailNotifications = YES;`
-`          SOGoCalendarDefaultRoles = (` `              PublicViewer,`
-`              ConfidentialDAndTViewer` `          );`
-`          SOGoLanguage = English;`
-`          SOGoMailDomain = acme.com;`
-`          SOGoDraftsFolderName = Drafts;`
-`          SOGoIMAPServer = localhost;` `          SOGoUserSources = (`
-`              {` `                  type = ldap;`
-`                  CNFieldName = cn;`
-`                  IDFieldName = uid;`
-`                  UIDFieldName = uid;`
-`                  baseDN = "ou=users,dc=acme,dc=com";`
-`                  bindDN = "uid=sogo,ou=users,dc=acme,dc=com";`
-`                  bindPassword = qwerty;`
-`                  canAuthenticate = YES;`
-`                  displayName = "Shared Addresses";`
-`                  hostname = localhost;`
-`                  id = public;`
-`                  isAddressBook = YES;` `                  port = 389;`
-`              }` `          );`
-`          SOGoMailingMechanism = smtp;`
-`          SOGoSMTPServer = 127.0.0.1;`
-`          SOGoSentFolderName = Sent;`
-`          SOGoTimeZone = America/Montreal;`
-`          SOGoTrashFolderName = Trash;` <literal>}</literal></simpara>
++          SOGoProfileURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";+
++          OCSFolderInfoURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";+
++          OCSSessionsFolderURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";+
++          SOGoAppointmentSendEMailNotifications = YES;+
++          SOGoCalendarDefaultRoles = (+ +              PublicViewer,+
++              ConfidentialDAndTViewer+ +          );+
++          SOGoLanguage = English;+
++          SOGoMailDomain = acme.com;+
++          SOGoDraftsFolderName = Drafts;+
++          SOGoIMAPServer = localhost;+ +          SOGoUserSources = (+
++              {+ +                  type = ldap;+
++                  CNFieldName = cn;+
++                  IDFieldName = uid;+
++                  UIDFieldName = uid;+
++                  baseDN = "ou=users,dc=acme,dc=com";+
++                  bindDN = "uid=sogo,ou=users,dc=acme,dc=com";+
++                  bindPassword = qwerty;+
++                  canAuthenticate = YES;+
++                  displayName = "Shared Addresses";+
++                  hostname = localhost;+
++                  id = public;+
++                  isAddressBook = YES;+ +                  port = 389;+
++              }+ +          );+
++          SOGoMailingMechanism = smtp;+
++          SOGoSMTPServer = 127.0.0.1;+
++          SOGoSentFolderName = Sent;+
++          SOGoTimeZone = America/Montreal;+
++          SOGoTrashFolderName = Trash;+ <literal>}</literal></simpara>
 </section>
 <section id="_multi_domains_configuration">
 <title>Multi-domains Configuration</title>
@@ -2013,66 +2120,63 @@ define a distinct authentication source for each_domain_. Following is
 the same configuration that now includes two domains (acme.com and
 coyote.com) :</simpara>
 <simpara><literal>{</literal>
-`          SOGoProfileURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";`
-`          OCSFolderInfoURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";`
-`          OCSSessionsFolderURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";`
-`          SOGoAppointmentSendEMailNotifications = YES;`
-`          SOGoCalendarDefaultRoles = (` `              PublicViewer,`
-`              ConfidentialDAndTViewer` `          );`
-`          SOGoLanguage = English;`
-`          SOGoMailingMechanism = smtp;`
-`          SOGoSMTPServer = 127.0.0.1;`
-`          SOGoSentFolderName = Sent;`
-`          SOGoTimeZone = America/Montreal;`
-`          SOGoTrashFolderName = Trash;`
-`          SOGoIMAPServer = localhost;` `          domains = {`
-`              acme = {` `                  SOGoMailDomain = acme.com;`
-`                  SOGoDraftsFolderName = Drafts;`
-`                  SOGoUserSources = (` `                      {`
-`                          type = ldap;`
-`                          CNFieldName = cn;`
-`                          IDFieldName = uid;`
-`                          UIDFieldName = uid;`
-`                          baseDN = "ou=users,dc=acme,dc=com";`
-`                          bindDN = "uid=sogo,ou=users,dc=acme,dc=com";`
-`                          bindPassword = qwerty;`
-`                          canAuthenticate = YES;`
-`                          displayName = "Shared Addresses";`
-`                          hostname = localhost;`
-`                          id = public_acme;`
-`                          isAddressBook = YES;`
-`                          port = 389;` `                      }`
-`                  );` `              };` `              coyote = {`
-`                  SOGoMailDomain = coyote.com;`
-`                  SOGoIMAPServer = imap.coyote.com;`
-`                  SOGoUserSources = (` `                      {`
-`                          type = ldap;`
-`                          CNFieldName = cn;`
-`                          IDFieldName = uid;`
-`                          UIDFieldName = uid;`
-`                          baseDN = "ou=users,dc=coyote,dc=com";`
-`                          bindDN = "uid=sogo,ou=users,dc=coyote,dc=com";`
-`                          bindPassword = qwerty;`
-`                          canAuthenticate = YES;`
-`                          displayName = "Shared Addresses";`
-`                          hostname = localhost;`
-`                          id = public_coyote;`
-`                          isAddressBook = YES;`
-`                          port = 389;` `                      }`
-`                  );` `              };` `          };` <literal>}</literal></simpara>
++          SOGoProfileURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_user_profile";+
++          OCSFolderInfoURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_folder_info";+
++          OCSSessionsFolderURL =              "postgresql://sogo:sogo@localhost:5432/sogo/sogo_sessions_folder";+
++          SOGoAppointmentSendEMailNotifications = YES;+
++          SOGoCalendarDefaultRoles = (+ +              PublicViewer,+
++              ConfidentialDAndTViewer+ +          );+
++          SOGoLanguage = English;+
++          SOGoMailingMechanism = smtp;+
++          SOGoSMTPServer = 127.0.0.1;+
++          SOGoSentFolderName = Sent;+
++          SOGoTimeZone = America/Montreal;+
++          SOGoTrashFolderName = Trash;+
++          SOGoIMAPServer = localhost;+ +          domains = {+
++              acme = {+ +                  SOGoMailDomain = acme.com;+
++                  SOGoDraftsFolderName = Drafts;+
++                  SOGoUserSources = (+ +                      {+
++                          type = ldap;+
++                          CNFieldName = cn;+
++                          IDFieldName = uid;+
++                          UIDFieldName = uid;+
++                          baseDN = "ou=users,dc=acme,dc=com";+
++                          bindDN = "uid=sogo,ou=users,dc=acme,dc=com";+
++                          bindPassword = qwerty;+
++                          canAuthenticate = YES;+
++                          displayName = "Shared Addresses";+
++                          hostname = localhost;+
++                          id = public_acme;+
++                          isAddressBook = YES;+
++                          port = 389;+ +                      }+
++                  );+ +              };+ +              coyote = {+
++                  SOGoMailDomain = coyote.com;+
++                  SOGoIMAPServer = imap.coyote.com;+
++                  SOGoUserSources = (+ +                      {+
++                          type = ldap;+
++                          CNFieldName = cn;+
++                          IDFieldName = uid;+
++                          UIDFieldName = uid;+
++                          baseDN = "ou=users,dc=coyote,dc=com";+
++                          bindDN = "uid=sogo,ou=users,dc=coyote,dc=com";+
++                          bindPassword = qwerty;+
++                          canAuthenticate = YES;+
++                          displayName = "Shared Addresses";+
++                          hostname = localhost;+
++                          id = public_coyote;+
++                          isAddressBook = YES;+
++                          port = 389;+ +                      }+
++                  );+ +              };+ +          };+ <literal>}</literal></simpara>
 <simpara>The following additional parameters only affect SOGo when using multiple
 domains.</simpara>
 <informaltable
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -2080,31 +2184,31 @@ rowsep="1" colsep="1"
 <entry align="left" valign="top"><simpara>Parameter used to activate user
 identification by domain. Users will be able (without being required) to
 login using the formmailto:username@domain[<literal>username@domain</literal>], meaning
-that values of`UIDFieldName`no longer have to be unique among all
+that values of+UIDFieldName+no longer have to be unique among all
 domains but only within the same domain. Internally, users will always
 be identified by the concatenation of their username and domain.
 Consequently, activating this parameter on an existing system implies
 that user identifiers will change and their previous calendars and
 address books will no longer be accessible unless a conversion is
 performed.<?asciidoc-br?>
-Defaults to`NO`when unset.</simpara></entry>
+Defaults to+NO+when unset.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoLoginDomains</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to define which domains should be
 selectable from the login page. This parameter is an array of keys from
-the`domains`dictionary.<?asciidoc-br?>
+the+domains+dictionary.<?asciidoc-br?>
 Defaults to an empty array, which means that no domains appear on the
 login page. If you prefer having the domain names listed, just use these
-as keys for the the`domains`dictionary.</simpara></entry>
+as keys for the the+domains+dictionary.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
 <entry align="left" valign="top"><simpara>SOGoDomainsVisibility</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set domains visible among
 themselves. This parameter is an array of arrays.<?asciidoc-br?>
-Example:`SOGoDomainsVisibility = <indexterm><primary>acme</primary></indexterm>acme;               `Defaults
+Example:+SOGoDomainsVisibility = <indexterm><primary>acme</primary></indexterm>acme;               +Defaults
 to an empty array, which means domains are isolated from each other.</simpara></entry>
 </row>
 </tbody>
@@ -2114,7 +2218,7 @@ to an empty array, which means domains are isolated from each other.</simpara></
 <section id="_apache_configuration">
 <title>Apache Configuration</title>
 <simpara>The SOGo configuration for Apache is located
-in`/etc/httpd/conf.d/SOGo.conf`.</simpara>
+in+/etc/httpd/conf.d/SOGo.conf+.</simpara>
 <simpara>Upon SOGo installation, a default configuration file is created which is
 suitable for most configurations.</simpara>
 <simpara>You must also configure the following parameters in the SOGo
@@ -2126,8 +2230,8 @@ secure access to your SOGo installation.</simpara>
 details.</simpara>
 <simpara>You might also have to adjust the configuration if you have SELinux
 enabled.</simpara>
-<simpara>The default configuration will use`mod_proxy`and`mod_headers`to relay
-requests to the`sogod`parent process. This is suitable for small to
+<simpara>The default configuration will use+mod_proxy+and+mod_headers+to relay
+requests to the+sogod+parent process. This is suitable for small to
 medium deployments.</simpara>
 </section>
 <section id="_starting_services">
@@ -2139,35 +2243,35 @@ the following command :</simpara>
 automatically started at boot time. Restart the Apache service since
 modules and configuration files were added :</simpara>
 <simpara><literal>service httpd restart</literal></simpara>
-<simpara>Finally, you should also make sure that the`memcached`service is started
+<simpara>Finally, you should also make sure that the+memcached+service is started
 and that it is also automatically started at boot time.</simpara>
 </section>
 <section id="_cronjob__email_reminders">
 <title>_Cronjob_— EMail reminders</title>
 <simpara>SOGo allows you to set email-based reminders for events and tasks. To
-enable this, you must enable the`SOGoEnableEMailAlarms`preference and
-set the`OCSEMailAlarmsFolderURL`preference accordingly.</simpara>
+enable this, you must enable the+SOGoEnableEMailAlarms+preference and
+set the+OCSEMailAlarmsFolderURL+preference accordingly.</simpara>
 <simpara>Once you&#8217;ve correctly set those two preferences, you must create
 a_cronjob_that will run under the “sogo” user. This_cronjob_should be
 run every minute.</simpara>
-<simpara>A commented out example should have been installed in`/etc/cron.d/sogo`,
+<simpara>A commented out example should have been installed in+/etc/cron.d/sogo+,
 to enable it, simply uncomment it.</simpara>
 <simpara>As a reference, the_cronjob_should de defined like this:</simpara>
 <simpara><literal>* * * * *     /usr/sbin/sogo-ealarms-notify</literal></simpara>
 <simpara>If your mail server requires use of SMTP AUTH, specify a credential file
-using`-p /path/to/credFile`. This file should contain the username and
+using+ -p /path/to/credFile+. This file should contain the username and
 password, separated by a colon (username:password)</simpara>
 </section>
 <section id="_cronjob__vacation_messages_expiration">
 <title>_Cronjob_— Vacation messages expiration</title>
 <simpara>When vacation messages are enabled (see the
-parameter`SOGoVacationEnabled`), users can set an expiration date to
+parameter+SOGoVacationEnabled+), users can set an expiration date to
 messages auto-reply. For this feature to work, you must run
 a_cronjob_under the “sogo” user.</simpara>
 <simpara>A commented out example should have been installed
-in`/etc/cron.d/sogo`. To work correctly this tool must login as an
+in+/etc/cron.d/sogo+. To work correctly this tool must login as an
 administrative user on the sieve server. The required credentials must
-be specified in a file by using`-p /path/to/credFile`. This file should
+be specified in a file by using+ -p /path/to/credFile+. This file should
 contain the username and password, separated by a colon
 (username:password)</simpara>
 <simpara>The_cronjob_should look like this :</simpara>
@@ -2183,7 +2287,7 @@ following LDIF file (<literal>sogo.ldif</literal>) can be used as an example :</
 <simpara><literal>dn: uid=sogo,ou=users,dc=acme,dc=com</literal> <literal>objectClass: top</literal>
 <literal>objectClass: inetOrgPerson</literal> <literal>objectClass: person</literal>
 <literal>objectClass: organizationalPerson</literal> <literal>uid: sogo</literal>
-<literal>cn: SOGo Administrator      ` `mail: sogo@acme.com</literal> <literal>sn: Administrator</literal>
+<literal>cn: SOGo Administrator      + +mail: <ulink url="mailto:sogo@acme">sogo@acme</ulink>.com</literal> <literal>sn: Administrator</literal>
 <literal>givenName: SOGo</literal></simpara>
 <simpara>Load the LDIF file inside your LDAP server using the following command :</simpara>
 <simpara><literal>ldapadd -f sogo.ldif -x -w qwerty -D cn=Manager,dc=acme,dc=com</literal></simpara>
@@ -2198,7 +2302,7 @@ file (<literal>jdoe.ldif</literal>) as an example to create a SOGo user account 
 <simpara><literal>dn: uid=jdoe,ou=users,dc=acme,dc=com</literal> <literal>objectClass: top</literal>
 <literal>objectClass: inetOrgPerson</literal> <literal>objectClass: person</literal>
 <literal>objectClass: organizationalPerson</literal> <literal>uid: jdoe</literal> <literal>cn: John Doe</literal>
-<literal>mail: jdoe@acme.com</literal> <literal>sn: Doe</literal> <literal>givenName: John</literal></simpara>
+<literal>mail: <ulink url="mailto:jdoe@acme">jdoe@acme</ulink>.com</literal> <literal>sn: Doe</literal> <literal>givenName: John</literal></simpara>
 <simpara>Load the LDIF file inside your LDAP server using the following command :</simpara>
 <simpara><literal>ldapadd -f jdoe.ldif -x -w qwerty -D cn=Manager,dc=acme,dc=com</literal></simpara>
 <simpara>Finally, set the password (to the value “qwerty”) of the SOGo
@@ -2223,8 +2327,8 @@ required packages.</simpara>
 <simpara>Once installed, simply uncomment the following lines from your SOGo
 Apache configuration:</simpara>
 <simpara><literal>ProxyPass /Microsoft-Server-ActiveSync \</literal>
-`              <ulink url="http://127.0.0.1:20000/SOGo/Microsoft-Server-ActiveSync">http://127.0.0.1:20000/SOGo/Microsoft-Server-ActiveSync</ulink>\`
-`       retry=60 connectiontimeout=5 timeout=360`</simpara>
++              <ulink url="http://127.0.0.1:20000">http://127.0.0.1:20000</ulink> /SOGo/Microsoft-Server-ActiveSync\+
++       retry=60 connectiontimeout=5 timeout=360+</simpara>
 <simpara>Restart Apache afterwards.</simpara>
 <simpara>The following additional parameters only affect SOGo when using
 ActiveSync:</simpara>
@@ -2232,13 +2336,10 @@ ActiveSync:</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="3">
-<colspec colname="col_1" colwidth="145*"/>
-<colspec colname="col_2" colwidth="140*"/>
-<colspec colname="col_3" colwidth="140*"/>
+<colspec colname="col_1" colwidth="33*"/>
+<colspec colname="col_2" colwidth="33*"/>
+<colspec colname="col_3" colwidth="33*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -2260,7 +2361,7 @@ not set, it defaults to 30 seconds.</simpara></entry>
 <entry align="left" valign="top"><simpara>Parameter used to set the maximum amount
 of time, in seconds, SOGo will wait before doing an internal check for
 data changes (add, delete, and update). This parameter must be lower
-than`SOGoMaximumSyncInterval`. If not set, it defaults to 10 seconds.</simpara></entry>
+than+SOGoMaximumSyncInterval+. If not set, it defaults to 10 seconds.</simpara></entry>
 </row>
 <row>
 <entry align="left" valign="top"><simpara>S</simpara></entry>
@@ -2275,35 +2376,69 @@ clients.</simpara></entry>
 </tgroup>
 </informaltable>
 <simpara>Please be aware of the following limitations:</simpara>
-<simpara>❏Currently, only the personal calendar and address book are
-synchronized. Adding support for all folders is planned.</simpara>
-<simpara>❏When creating an Outlook 2013 profile, you must actually kill Outlook
+<itemizedlist>
+<listitem>
+<simpara>
+Currently, only the personal calendar and address book are
+synchronized. Adding support for all folders is planned.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+When creating an Outlook 2013 profile, you must actually kill Outlook
 before the end of the creation process.
 Seehttp://www.vionblog.com/connect-zimbra-community-with-outlook-2013[<ulink url="http://www.vionblog.com/connect-zimbra-community-with-outlook-2013]for">http://www.vionblog.com/connect-zimbra-community-with-outlook-2013]for</ulink>
-a procedure example.</simpara>
-<simpara>❏Outlook 2013 does not search the GAL. One possible alternative solution
+a procedure example.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Outlook 2013 does not search the GAL. One possible alternative solution
 is to configure Outlook to use a LDAP server (over SSL) with
 authentication. Alternatively, when supporting more than just the
 personal address book, we&#8217;ll also be able to expose the LDAP/SQL based
-address books in SOGo over ActiveSync. </simpara>
-<simpara>❏Make sure you do not use a self-signed certificate. While this will
+address books in SOGo over ActiveSync. 
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Make sure you do not use a self-signed certificate. While this will
 work, Outlook will work intermittently as it will raise popups for
 certificate validation, sometimes in background, preventing the user to
-see the warning and thus, preventing any synchronization to happen.</simpara>
-<simpara>❏ActiveSync clients keep connections open for a while. Each connection
+see the warning and thus, preventing any synchronization to happen.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+ActiveSync clients keep connections open for a while. Each connection
 will grab a hold on a sogod process so you will need a lot of processes
 to handle many clients. This limitation will eventually be overcome in
-SOGo.</simpara>
-<simpara>❏Repetitive events with occurrences exceptions are currently not
-supported.</simpara>
-<simpara>❏Outlook 2013 Autodiscovery is currently not supported.</simpara>
-<simpara>❏Outlook 2013 freebusy lookups are supported using the Internet
+SOGo.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Repetitive events with occurrences exceptions are currently not
+supported.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Outlook 2013 Autodiscovery is currently not supported.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Outlook 2013 freebusy lookups are supported using the Internet
 Free/Busy feature of Outlook 2013. Please
 seehttp://support.microsoft.com/kb/291621[<ulink url="http://support.microsoft.com/kb/291621]for">http://support.microsoft.com/kb/291621]for</ulink>
 configuration instructions. On the SOGo
-side,<literal>SOGoEnablePublicAccess`must be set to YES and the URL to use must
+side,<literal>SOGoEnablePublicAccess+must be set to YES and the URL to use must
 be of the following
-format:`http://&lt;hostname&gt;/SOGo/dav/public/%NAME%/freebusy.ifb</literal>  </simpara>
+format:+http://&lt;hostname&gt;/SOGo/dav/public/%NAME%/freebusy.ifb</literal>  
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara>In order to use the SOGo ActiveSync support code in production
 environments, you need to get a proper usage license from Microsoft.
 Please contact them directly to negotiate the fees associated to your
@@ -2346,20 +2481,70 @@ Please refer to the documentation published online:</simpara>
 <simpara>If you only use the SOGo Connector plug in, you can still easily access
 your data.</simpara>
 <simpara>To access your personal address book:</simpara>
-<simpara>❏Choose Go &gt; Address Book.</simpara>
-<simpara>❏Choose File &gt; New &gt; Remote Address Book.</simpara>
-<simpara>❏Enter a significant name for your calendar in the Name field.</simpara>
-<simpara>❏Type the following URL in the URL field:<?asciidoc-br?></simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Choose Go &gt; Address Book.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Choose File &gt; New &gt; Remote Address Book.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Enter a significant name for your calendar in the Name field.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Type the following URL in the URL field:<?asciidoc-br?>
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara><ulink url="http://localhost/SOGo/dav/jdoe/Contacts/personal/">http://&lt;hostname&gt;/SOGo/dav/jdoe/Contacts/personal/</ulink></simpara>
-<simpara>❏Click on OK.<?asciidoc-br?></simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Click on OK.<?asciidoc-br?>
+</simpara>
+</listitem>
+</itemizedlist>
 <simpara>To access your personal calendar:</simpara>
-<simpara>❏Choose Go &gt; Calendar.</simpara>
-<simpara>❏Choose Calendar &gt; New Calendar.</simpara>
-<simpara>❏Select On the Network and click on Continue.</simpara>
-<simpara>❏Select CalDAV.</simpara>
-<simpara>❏Type the following URL in the URL field:<?asciidoc-br?>
- <ulink url="http://localhost/SOGo/dav/jdoe/Calendar/personal/">http://localhost/SOGo/dav/jdoe/Calendar/personal/</ulink></simpara>
-<simpara>❏Click on Continue.</simpara>
+<itemizedlist>
+<listitem>
+<simpara>
+Choose Go &gt; Calendar.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Choose Calendar &gt; New Calendar.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Select On the Network and click on Continue.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Select CalDAV.
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Type the following URL in the URL field:<?asciidoc-br?>
+ <ulink url="http://localhost/SOGo/dav/jdoe/Calendar/personal/">http://localhost/SOGo/dav/jdoe/Calendar/personal/</ulink>
+</simpara>
+</listitem>
+<listitem>
+<simpara>
+Click on Continue.
+</simpara>
+</listitem>
+</itemizedlist>
 </section>
 <section id="_apple_ical">
 <title>Apple iCal</title>
@@ -2377,23 +2562,23 @@ to use SOGo.</simpara>
 Apache configuration file to listen on port 8800 and handle requests
 coming from iOS devices.</simpara>
 <simpara>The virtual host should be defined like :</simpara>
-<simpara><literal>&lt;VirtualHost *:8800&gt;</literal> `        RewriteEngine Off`
-`        ProxyRequests Off` `        SetEnv proxy-nokeepalive 1`
-`        ProxyPreserveHost On` `        ProxyPassInterpolateEnv On`
-`        ProxyPass /principals <ulink url="http://127.0.0.1:20000/SOGo/dav/">http://127.0.0.1:20000/SOGo/dav/</ulink> interpolate`
-`        ProxyPass /SOGo <ulink url="http://127.0.0.1:20000/SOGo">http://127.0.0.1:20000/SOGo</ulink> interpolate`
-`        ProxyPass / <ulink url="http://127.0.0.1:20000/SOGo/dav/">http://127.0.0.1:20000/SOGo/dav/</ulink> interpolate`
-`        &lt;Location /&gt;` `          Order allow,deny`
-`          Allow from all` `        &lt;/Location&gt;`
-`        &lt;Proxy <ulink url="http://127.0.0.1:20000&gt">http://127.0.0.1:20000&gt</ulink>;`
-`          RequestHeader set "x-webobjects-server-port" "8800"`
-`          RequestHeader set "x-webobjects-server-name" "acme.com:8800"`
-`          RequestHeader set "x-webobjects-server-url" "http://acme.com:8800"`
-`          RequestHeader set "x-webobjects-server-protocol" "HTTP/1.0"`
-`          RequestHeader set "x-webobjects-remote-host" "127.0.0.1"`
-`          AddDefaultCharset UTF-8` `        &lt;/Proxy&gt;`
-`        ErrorLog /var/log/apache2/ab-error.log`
-`        CustomLog /var/log/apache2/ab-access.log combined`
+<simpara><literal>&lt;VirtualHost *:8800&gt;</literal> +        RewriteEngine Off+
++        ProxyRequests Off+ +        SetEnv proxy-nokeepalive 1+
++        ProxyPreserveHost On+ +        ProxyPassInterpolateEnv On+
++        ProxyPass /principals <ulink url="http://127.0.0.1:20000">http://127.0.0.1:20000</ulink> /SOGo/dav/ interpolate+
++        ProxyPass /SOGo <ulink url="http://127.0.0.1:20000">http://127.0.0.1:20000</ulink> /SOGo interpolate+
++        ProxyPass / <ulink url="http://127.0.0.1:20000">http://127.0.0.1:20000</ulink> /SOGo/dav/ interpolate+
++        &lt;Location /&gt;+ +          Order allow,deny+
++          Allow from all+ +        &lt;/Location&gt;+
++        &lt;Proxy <ulink url="http://127.0.0.1:20000">http://127.0.0.1:20000</ulink> &gt;+
++          RequestHeader set "x-webobjects-server-port" "8800"+
++          RequestHeader set "x-webobjects-server-name" "acme.com:8800"+
++          RequestHeader set "x-webobjects-server-url" "http://acme.com:8800"+
++          RequestHeader set "x-webobjects-server-protocol" "HTTP/1.0"+
++          RequestHeader set "x-webobjects-remote-host" "127.0.0.1"+
++          AddDefaultCharset UTF-8+ +        &lt;/Proxy&gt;+
++        ErrorLog /var/log/apache2/ab-error.log+
++        CustomLog /var/log/apache2/ab-access.log combined+
 <literal>&lt;/VirtualHost&gt;</literal></simpara>
 <simpara>This configuration is also required if you want to configure a CardDAV
 account on an Apple iOS device (version 4.0 and later).</simpara>
@@ -2415,11 +2600,8 @@ current version of SOGo from the previous release.</simpara>
 frame="all"
 rowsep="1" colsep="1"
 >
-<?dbhtml table-width="100%"?>
-<?dbfo table-width="100%"?>
-<?dblatex table-width="100%"?>
 <tgroup cols="1">
-<colspec colname="col_1" colwidth="425*"/>
+<colspec colname="col_1" colwidth="100*"/>
 <tbody>
 <row>
 <entry align="left" valign="top"><simpara><emphasis role="strong">2.0.5</emphasis></simpara></entry>

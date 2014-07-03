@@ -2283,7 +2283,7 @@ coming from iOS devices.</simpara>
 `        ProxyPass / <ulink url="http://127.0.0.1:20000/SOGo/dav/">http://127.0.0.1:20000/SOGo/dav/</ulink> interpolate`
 `        &lt;Location /&gt;` `          Order allow,deny`
 `          Allow from all` `        &lt;/Location&gt;`
-`        &lt;Proxy <ulink url="http://127.0.0.1:20000&gt">http://127.0.0.1:20000&gt</ulink>;`
+`        &lt;Proxy <ulink url="http://127.0.0.1:20000&amp;">http://127.0.0.1:20000&amp;</ulink>;`
 `          RequestHeader set "x-webobjects-server-port" "8800"`
 `          RequestHeader set "x-webobjects-server-name" "acme.com:8800"`
 `          RequestHeader set "x-webobjects-server-url" "http://acme.com:8800"`
