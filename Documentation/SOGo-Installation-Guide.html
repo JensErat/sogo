@@ -1700,13 +1700,13 @@
       <br clear="none"/>Enter keystore password:<span class="Apple-converted-space"> </span>tomcat<br clear="none"/>
       <br clear="none"/># add the pem to the trusted certs<br clear="none"/>cp tomcat.pem /etc/ssl/certs<br clear="none"/>cat tomcat.pem<span class="Apple-converted-space"> </span>&gt;&gt;/etc/ssl/certs/ca-certificates</code>
     <p class="p6">If any of those constraints is not satisfied, the webmail interface of SOGo will display an empty email account. Unfortunately, SOGo has no possibility to detect which one is the cause of the problem. The only indicators are log messages that at least pinpoint the symptoms:</p>
-    <p class="p40">
+    <blockquote class="p40">
       <i>“failure to obtain a PGT from the C.A.S. service”</i>
-    </p>
+    </blockquote>
     <p class="p6">Such an error will show up during authentication of the user to SOGo. It happens when the authentication service has accepted the user authentication ticket but has not returned a “Proxy Granting Ticket”.</p>
-    <p class="p40">
+    <blockquote class="p40">
       <i>“a CAS failure occurred during operation....”</i>
-    </p>
+    </blockquote>
     <p class="p6">This error indicate that an attempt was made to retrieve an authentication ticket for a third-party service such as IMAP or sieve. Most of the time, this happens as a consequence to the problem described above. To troubleshoot these issues, one should be tailing cas.log, pam logs and sogo logs.</p>
     <p class="p6">Currently, SOGo will ask for a CAS ticket using the same CAS service name for both IMAP and Sieve.<b>When CASifying sieve, this means that the</b>
       <code class="s2">
