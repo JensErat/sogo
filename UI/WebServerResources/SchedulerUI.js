@@ -1104,27 +1104,33 @@ function eventsListCallback(http) {
 }
 
 function activeTasksCallback(http) {
-  if (http.readyState == 4 && http.status == 200) {
-    if (http.responseText.length > 0) {
-      document.activeTasksAjaxRequest = null;
-      var data = http.responseText.evalJSON(true);
-      var list = $("calendarList");
-      
-      var items = list.childNodesWithTag("li");
-      for (var i = 0; i < items.length; i++) {
-        var id = items[i].getAttribute("id").substr(1);
-        var number = data[id];
-        var input = items[i].childNodesWithTag("input")[0];
-        var activeTasks = items[i].childNodesWithTag("span")[0];
-        if (number == "0") {
-          activeTasks.innerHTML = "";
+    if (http.readyState == 4 && http.status == 200) {
+        if (http.responseText.length > 0) {
+            document.activeTasksAjaxRequest = null;
+            var data = http.responseText.evalJSON(true);
+            var list = $("calendarList");
+
+            var items = list.childNodesWithTag("li");
+            for (var i = 0; i < items.length; i++) {
+                var id = items[i].getAttribute("id").substr(1);
+                var number = parseInt(data[id]);
+                var input = items[i].childNodesWithTag("input")[0];
+                var activeTasks = items[i].childNodesWithTag("span")[1];
+                if (typeof activeTasks == "undefined") {
+                    if (number > 0) {
+                        activeTasks = createElement("span", null, "badge");
+                        items[i].appendChild(activeTasks);
+                    }
+                }
+                else if (number == 0) {
+                    items[i].removeChild(activeTasks);
+                }
+                if (number > 0) {
+                    activeTasks.innerHTML = number;
+                }
+            }
         }
-        else {
-          activeTasks.innerHTML = "(" + number + ")";
-        }
-      }
     }
-  }
 }
 
 function tasksListCallback(http) {
@@ -2068,27 +2074,30 @@ function _drawCalendarEvents(events, eventsData, columnsData) {
 }
 
 function newEventDIV(eventRep, event) {
-    var eventCell = newBaseEventDIV(eventRep, event, event[4]);
-
-    var pc = 100 / eventRep.siblings;
-    var left = Math.floor(eventRep.position * pc);
-    eventCell.style.left = left + "%";
-    var right = Math.floor(100 - (eventRep.position + 1) * pc);
-    eventCell.style.right = right + "%";
-    eventCell.addClassName("starts" + eventRep.start);
-    eventCell.addClassName("lasts" + eventRep.length);
-
-    if (event[7]) {
-        var inside = eventCell.childNodesWithTag("div")[0];
-        var textDiv = inside.childNodesWithTag("div")[1];
-        textDiv.appendChild(createElement("br"));
-        var span = createElement("span", null, "location");
-        var text = _("Location:") + " " + event[7];
-        span.update(text);
-        textDiv.appendChild(span);
-    }
-
-    return eventCell;
+  var eventCell = newBaseEventDIV(eventRep, event, event[4]);
+  
+  var pc = 100 / eventRep.siblings;
+  var left = eventRep.position * pc;
+  eventCell.style.left = left + "%";
+  var right = 100 - (eventRep.position + 1) * pc;
+  if (event[10] != null)
+    eventCell.style.borderRight = "8px solid white";
+  
+  eventCell.style.right = right + "%";
+  eventCell.addClassName("starts" + eventRep.start);
+  eventCell.addClassName("lasts" + eventRep.length);
+  
+  if (event[7]) {
+    var inside = eventCell.childNodesWithTag("div")[0];
+    var textDiv = inside.childNodesWithTag("div")[1];
+    textDiv.appendChild(createElement("br"));
+    var span = createElement("span", null, "location");
+    var text = _("Location:") + " " + event[7];
+    span.update(text);
+    textDiv.appendChild(span);
+  }
+  
+  return eventCell;
 }
 
 function _drawMonthCalendarEvents(events, eventsData) {
@@ -2106,16 +2115,18 @@ function _drawMonthCalendarEvents(events, eventsData) {
 }
 
 function newMonthEventDIV(eventRep, event) {
-    var eventText;
-    if (event[8]) // all-day event
-        eventText = event[4];
-    else
-        eventText = eventRep.starthour + " - " + event[4];
-
-    var eventCell = newBaseEventDIV(eventRep, event,
-                                    eventText);
-
-    return eventCell;
+  var eventText;
+  if (event[8]) // all-day event
+    eventText = event[4];
+  else
+    eventText = eventRep.starthour + " - " + event[4];
+  
+  var eventCell = newBaseEventDIV(eventRep, event,
+                                  eventText);
+  if (event[10] != null)
+    eventCell.style.borderRight = "8px solid white";
+  
+  return eventCell;
 }
 
 function attachDragControllers(contentView) {
@@ -3083,15 +3094,8 @@ function initCalendarSelector() {
   var items = list.childNodesWithTag("li");
   for (var i = 0; i < items.length; i++) {
     var input = items[i].childNodesWithTag("input")[0];
-    var activeTasks = items[i].childNodesWithTag("span")[0];
+    var activeTasks = items[i].childNodesWithTag("span")[1];
     $(input).observe("click", clickEventWrapper(updateCalendarStatus));
-    if (activeTasks.textContent == "0") {
-      activeTasks.innerHTML = "";
-    }
-    else {
-      activeTasks.innerHTML = "(" + activeTasks.innerText + ")";
-    }
-    
   }
   
   var links = $("calendarSelectorButtons").childNodesWithTag("a");
@@ -3103,7 +3107,7 @@ function initCalendarSelector() {
 
 function onCalendarSelectionChange(event) {
     var target = Event.element(event);
-    if (target.tagName == 'DIV') {
+    if (target.tagName == 'DIV' || target.tagName == 'SPAN') {
         target = target.parentNode;
     }
 
@@ -3158,12 +3162,8 @@ function updateCalendarProperties(calendarID, calendarName, calendarColor) {
         nodeID = "/" + folderName;
 	//   log("nodeID: " + nodeID);
     var calendarNode = $(nodeID);
-    var childNodes = calendarNode.childNodes;
-    var textNode = childNodes[childNodes.length-1];
-    if (textNode.tagName == 'DIV')
-        calendarNode.appendChild(document.createTextNode(calendarName));
-    else
-        childNodes[childNodes.length-1].nodeValue = calendarName;
+    var displayNameNode = calendarNode.childNodesWithTag("span")[0];
+    displayNameNode.innerHTML = calendarName;
 
     appendStyleElement(nodeID, calendarColor);
 }
@@ -3343,9 +3343,12 @@ function appendCalendar(folderName, folderPath) {
         li.appendChild(document.createTextNode(" "));
 
         var colorBox = document.createElement("div");
-        li.appendChild(colorBox);
-        li.appendChild(document.createTextNode(folderName));
         colorBox.appendChild(document.createTextNode("\u00a0"));
+        li.appendChild(colorBox);
+
+        var displayName = document.createElement("span");
+        displayName.appendChild(document.createTextNode(folderName));
+        li.appendChild(displayName);
 
         $(colorBox).addClassName("colorBox");
         $(colorBox).addClassName('calendarFolder' + folderPath.substr(1));
@@ -3434,8 +3437,9 @@ function onCalendarRemove(event) {
 }
 
 function deletePersonalCalendar(folderElement) {
+    var displayName = folderElement.childNodesWithTag("span")[0].innerHTML.strip();
     showConfirmDialog(_("Confirmation"),
-                      _("Are you sure you want to delete the calendar \"%{0}\"?").formatted(folderElement.lastChild.nodeValue.strip()),
+                      _("Are you sure you want to delete the calendar \"%{0}\"?").formatted(displayName),
                       deletePersonalCalendarConfirm.bind(folderElement));
 }
 
